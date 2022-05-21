@@ -1,17 +1,27 @@
 import * as React from "react";
-import { Dimensions, Image, SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Image, SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity, View, useWindowDimensions } from "react-native";
 import { unmatched } from "../unmatched";
 import { others } from "../others";
 
+const DEFAULT_CARD = { width: 124.4, height: 175 };
+
 export default function Home(props) {
+  const { width, height } = useWindowDimensions();
+
+  const CARD_WIDTH = width < height ? width * 0.32 : height * 16.5;
+  const CARD_HEIGHT = CARD_WIDTH / DEFAULT_CARD.width * DEFAULT_CARD.height;
+
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.container}>
         <View style={styles.content}>
           {unmatched.map((character) => (
-            <View style={styles.itemContainer}>
+            <View style={[styles.itemContainer, { width: CARD_WIDTH }]}>
               <TouchableOpacity activeOpacity={0.7} onPress={() => props.navigation.navigate('Details', { character })}>
-                <Image source={character.image} style={styles.cardImg} />
+                <Image source={character.image} style={{
+                  height: CARD_HEIGHT,
+                  width: CARD_WIDTH,
+                }} />
               </TouchableOpacity>
             </View>
           ))}
@@ -19,8 +29,11 @@ export default function Home(props) {
         <Text style={[styles.purchased, styles.others]}>Otros luchadores ({others.length})</Text>
         <View style={styles.content}>
           {others.map((character) => (
-            <View style={styles.itemContainer}>
-              <Image source={character.image} style={styles.cardImg} />
+            <View style={[styles.itemContainer, { width: CARD_WIDTH }]}>
+              <Image source={character.image} style={{
+                height: CARD_HEIGHT,
+                width: CARD_WIDTH,
+              }} />
               <Text style={styles.name}>{character.name}</Text>
             </View>
           ))}
@@ -29,9 +42,6 @@ export default function Home(props) {
     </SafeAreaView>
   );
 }
-
-const CARD_WIDTH = Dimensions.get('screen').width * 0.32;
-const CARD_HEIGHT = 175;
 
 const styles = StyleSheet.create({
   container: {
@@ -49,14 +59,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   itemContainer: {
-    width: CARD_WIDTH,
     alignItems: 'center',
     borderWidth: 1,
     borderColor: 'black'
-  },
-  cardImg: {
-    height: CARD_HEIGHT,
-    width: CARD_WIDTH,
   },
   others: {
     marginTop: 50,
