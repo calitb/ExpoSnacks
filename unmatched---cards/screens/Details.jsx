@@ -31,10 +31,10 @@ export default function Details(props) {
           <Dialog visible={visible} onDismiss={hideDialog}>
             <Dialog.Title>Unmatched Attacks</Dialog.Title>
             <Dialog.Content>
-              <Paragraph>{`Orden de Efectos\n1. Immediately (Defender)\n2. Immediately (Attacker)\n3. During Combat (Defender)\n4. During Combat (Attacker)\n5. After Combar (Defender)\n6. After Combar (Attacker)`}</Paragraph>
+              <Paragraph>{`Orden de Efectos\n1. Immediately (Defender)\n2. Immediately (Attacker)\n3. During Combat (Defender)\n4. During Combat (Attacker)\n5. After Combat (Defender)\n6. After Combat (Attacker)`}</Paragraph>
             </Dialog.Content>
             <Dialog.Content>
-              <Paragraph>El combate lo gana el atacante si logra hacer daño, en caso contrario lo gana el defensor.</Paragraph>
+              <Paragraph>El combate lo gana el atacante si logra hacer al menos un daño de combate (daño al defensor del ataque en si, no de ningun efecto), en caso contrario lo gana el defensor.</Paragraph>
             </Dialog.Content>
             <Dialog.Actions>
               <Button onPress={hideDialog}>OK</Button>

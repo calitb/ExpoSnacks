@@ -1248,7 +1248,7 @@ export const unmatched = [
         "character": "any",
         "boost": 1,
         "description": "Shuffle 5 cards from your discard pile into your deck. Recover 1 health.",
-        "descripcion": "Baraja 5 cartas de tu pila de descarta y colócalas en tu mazo. Recupera 1 salud."
+        "descripcion": "Baraja 5 cartas de tu pila de descarte y colócalas en tu mazo. Recupera 1 salud."
       },
       {
         "name": "Eat Me",
