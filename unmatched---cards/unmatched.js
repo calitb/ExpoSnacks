@@ -1478,5 +1478,59 @@ export const unmatched = [
         "descripcion": "Puedes jugar esta carta como un ataque a distancia."
       },
     ]
+  },
+  {
+    "name": "Achilles",
+    "amount": 30,
+    "image": require('./assets/backs/achilles.jpg'),
+    "cards": []
+  },
+  {
+    "name": "Bloody Mary",
+    "amount": 30,
+    "image": require('./assets/backs/bloodymary.jpg'),
+    "cards": []
+  },
+  {
+    "name": "Sun Wukong",
+    "amount": 30,
+    "image": require('./assets/backs/sunwukong.jpg'),
+    "cards": []
+  },
+  {
+    "name": "Yennenga",
+    "amount": 30,
+    "image": require('./assets/backs/yennenga.jpg'),
+    "cards": []
+  },
+  {
+    "name": "Luke Cage",
+    "amount": 30,
+    "image": require('./assets/backs/luke.jpg'),
+    "cards": []
+  },
+  {
+    "name": "Ghost Rider",
+    "amount": 30,
+    "image": require('./assets/backs/ghostrider.jpg'),
+    "cards": []
+  },
+  {
+    "name": "Moon Knight",
+    "amount": 30,
+    "image": require('./assets/backs/moonknight.jpg'),
+    "cards": []
+  },
+  {
+    "name": "Dr. Ellie Sattler",
+    "amount": 30,
+    "image": require('./assets/backs/sattler.jpg'),
+    "cards": []
+  },
+  {
+    "name": "T. Rex",
+    "amount": 30,
+    "image": require('./assets/backs/trex.jpg'),
+    "cards": []
   }
 ]

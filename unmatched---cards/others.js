@@ -30,27 +30,6 @@ export const others = [
     "name": "Little Red Riding Hood",
   },
   {
-    "name": "Achilles",
-  },
-  {
-    "name": "Bloody Mary",
-  },
-  {
-    "name": "Sun Wukong",
-  },
-  {
-    "name": "Yennenga",
-  },
-  {
-    "name": "Luke Cage",
-  },
-  {
-    "name": "Ghost Rider",
-  },
-  {
-    "name": "Moon Knight",
-  },
-  {
     "name": "Daredevil",
   },
   {
@@ -58,11 +37,5 @@ export const others = [
   },
   {
     "name": "Elektra",
-  },
-  {
-    "name": "Dr. Ellie Sattler",
-  },
-  {
-    "name": "T. Rex",
   }
 ]
