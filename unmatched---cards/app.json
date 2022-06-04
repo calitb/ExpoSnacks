@@ -1,10 +1,11 @@
 {
   "expo": {
     "name": "unmatched---cards",
-    "slug": "snack-62849fe1-c481-4921-83f9-6e46d5eb6909",
+    "slug": "snack-01b41a04-f7d9-466f-bb5a-3ef7c2b02273",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",

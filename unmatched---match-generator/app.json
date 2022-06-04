@@ -1,10 +1,11 @@
 {
   "expo": {
     "name": "unmatched---match-generator",
-    "slug": "snack-61944f12-1bc3-42e9-9c01-6ced9f30a36c",
+    "slug": "snack-39c354e8-dac2-4b41-8d89-73069aa9308a",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
