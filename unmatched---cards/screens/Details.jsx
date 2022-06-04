@@ -1,6 +1,7 @@
 import * as React from "react";
 import { SafeAreaView, ScrollView, StyleSheet, Text, View } from "react-native";
 import { Button, IconButton, Paragraph, Dialog, Portal, Provider } from 'react-native-paper';
+import ReferenceCard from "../components/ReferenceCard";
 
 const BOOST = "⚫️";
 const types = {
@@ -43,6 +44,9 @@ export default function Details(props) {
         </Portal>
 
         <ScrollView style={styles.container}>
+          <View style={{ marginBottom: 25 }}>
+            <ReferenceCard />
+          </View>
           {character.cards.map((card) => {
             const { name, descripcion, type, value, amount, character, boost } = card;
             const typeIcon = types[type];
