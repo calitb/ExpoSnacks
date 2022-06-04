@@ -1531,6 +1531,114 @@ export const unmatched = [
     "name": "T. Rex",
     "amount": 30,
     "image": require('./assets/backs/trex.jpg'),
-    "cards": []
+    "cards": [
+      {
+        "name": "15,000 Pounds of Muscle",
+        "type": "attack",
+        "value": 3,
+        "character": "any",
+        "amount": 2,
+        "boost": 3,
+        "description": "During combat: Ignore the value of your opponent's card.\n\nAfter combat: Take 2 damage.",
+        "descripcion": "Durante el combate: Ignora el valor de la carta de tu oponente.\n\nDespués del combate: Toma 2 de daño."
+      },
+      {
+        "name": "65 Million Years of Gut Instinct",
+        "type": "scheme",
+        "character": "any",
+        "amount": 2,
+        "boost": 3,
+        "description": "Choose a card in your discard pile other than '65 Million Years of Gut Instinct' and return it to your hand.",
+        "descripcion": "Selecciona una carta de tu mazo descartado que no sea '65 Million Years of Gut Instinct' y la devuelve a tu mano."
+      },
+      {
+        "name": "Closer Than She Appears",
+        "type": "scheme",
+        "character": "any",
+        "amount": 3,
+        "boost": 2,
+        "description": "Move your fighter up to 1 space.\n\nDraw 1 card.\n\nGain 1 action.",
+        "descripcion": "Mueve tu peleador hasta 1 espacio.\n\nToma 1 carta.\n\nGana 1 acción."
+      },
+      {
+        "name": "Commanding Impact",
+        "type": "attack",
+        "value": 5,
+        "character": "any",
+        "amount": 3,
+        "boost": 2,
+        "description": "After combat: Draw 1 card.",
+        "descripcion": "Después del combate: Toma 1 carta de tu mazo."
+      },
+      {
+        "name": "Momentous Shift",
+        "type": "versatile",
+        "value": 3,
+        "character": "any",
+        "amount": 3,
+        "boost": 2,
+        "description": "During combat: If your fighter started this turn in a different space, this card's value is 5 instead.",
+        "descripcion": "Durante el combate: Si tu peleador comenzó este turno en un espacio diferente, el valor de esta carta es 5 en su lugar."
+      },
+      {
+        "name": "Reckless Lunge",
+        "type": "attack",
+        "value": 3,
+        "character": "any",
+        "amount": 3,
+        "boost": 4,
+        "description": "After combat: Deal 3 damage to the opposing fighter. Then, take 3 damage.",
+        "descripcion": "Después del combate: Haz 3 de daño al peleador opuesto. Luego, toma 3 de daño."
+      },
+      {
+        "name": "Ripples in the Water",
+        "type": "scheme",
+        "character": "any",
+        "amount": 3,
+        "boost": 2,
+        "description": "Place T-Rex in any space in her zone. Then, each opponent with a fighter adjacent to T-Rex discards 1 random card.",
+        "descripcion": "Coloca a T-Rex en cualquier espacio de su zona. Luego, cada oponente con un peleador adyacente a T-Rex descarta 1 carta aleatoria."
+      },
+      {
+        "name": "Terrifying Roar",
+        "type": "versatile",
+        "value": 3,
+        "character": "any",
+        "amount": 2,
+        "boost": 3,
+        "description": "Immediately: Fighters cannot leave their spaces for the rest of the turn.",
+        "descripcion": "Inmediatamente: Los peleadores no pueden salir de sus espacios por el resto del turno."
+      },
+      {
+        "name": "Thrash",
+        "type": "versatile",
+        "value": 2,
+        "character": "any",
+        "amount": 3,
+        "boost": 2,
+        "description": "During combat: You may BOOST this card.\n\nAfter combat: If you won the combat, deal 1 damage to each opposing fighter in T-Rex's zone.",
+        "descripcion": "Durante el combate: Puedes BOOST esta carta.\n\nDespués del combate: Si ganaste el combate, haz 1 de daño a cada peleador opuesto en la zona de T-Rex."
+      },
+      {
+        "name": "When Dinosaurs Ruled the Earth",
+        "type": "attack",
+        "value": 2,
+        "character": "any",
+        "amount": 4,
+        "boost": 3,
+        "description": "During combat: You may BOOST this card.\n\nAfter combat: If you won the combat, draw 1 card, gain 1 action, and take 2 damage.",
+        "descripcion": "Durante el combate: Puedes BOOST esta carta.\n\nDespués del combate: Si ganaste el combate, toma 1 carta, gana 1 acción y recibe 2 de daño."
+      },
+      {
+        "name": "You're Just Making Her Angry",
+        "type": "defense",
+        "value": 1,
+        "character": "any",
+        "amount": 2,
+        "boost": 1,
+        "description": "During combat: You may BOOST this card.\n\nAfter combat: If you won the combat, return this card to your hand.",
+        "descripcion": "Durante el combate: Puedes BOOST esta carta.\n\nDespués del combate: Si ganaste el combate, devuelve esta carta a tu mano."
+      }
+    ]
   }
 ]
