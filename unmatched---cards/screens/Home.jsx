@@ -1,9 +1,21 @@
 import * as React from "react";
 import { Image, SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity, View, useWindowDimensions } from "react-native";
 import { unmatched } from "../unmatched";
-import { others } from "../others";
 
 const DEFAULT_CARD = { width: 124.4, height: 175 };
+
+const ladder = [
+  'Dracula',
+  'Bloody Mary',
+  'Bruce Lee',
+  'Daredevil',
+  'Dr. Ellie Sattler',
+  'Ingen',
+  'Jekyll & Hyde',
+  'King Arthur',
+  'Little Red Riding Hood',
+  'Sinbad'
+]
 
 export default function Home(props) {
   const { width, height } = useWindowDimensions();
@@ -15,26 +27,15 @@ export default function Home(props) {
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.container}>
         <View style={styles.content}>
-          {unmatched.map((character) => (
+          {unmatched.filter(character => ladder.includes(character.name)).map((character) => (
             <View style={[styles.itemContainer, { width: CARD_WIDTH }]}>
               <TouchableOpacity activeOpacity={0.7} onPress={() => props.navigation.navigate('Details', { character })}>
                 <Image source={character.image} style={{
                   height: CARD_HEIGHT,
                   width: CARD_WIDTH,
                 }} />
+                <Text style={{ textAlign: 'center', padding: 2 }}>{character.name}</Text>
               </TouchableOpacity>
-            </View>
-          ))}
-        </View>
-        <Text style={[styles.purchased, styles.others]}>Otros luchadores ({others.length})</Text>
-        <View style={styles.content}>
-          {others.map((character) => (
-            <View style={[styles.itemContainer, { width: CARD_WIDTH }]}>
-              <Image source={character.image} style={{
-                height: CARD_HEIGHT,
-                width: CARD_WIDTH,
-              }} />
-              <Text style={styles.name}>{character.name}</Text>
             </View>
           ))}
         </View>
@@ -53,20 +54,9 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     justifyContent: 'center'
   },
-  name: {
-    fontSize: 18,
-    fontWeight: "bold",
-    textAlign: 'center',
-  },
   itemContainer: {
     alignItems: 'center',
     borderWidth: 1,
     borderColor: 'black'
   },
-  others: {
-    marginTop: 50,
-    fontSize: 18,
-    fontWeight: "bold",
-    textAlign: 'center',
-  }
 });
