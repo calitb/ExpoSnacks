@@ -67,7 +67,7 @@ export default function Attack(props: Props) {
         Resuelve cualquier efecto DESPUÉS DEL COMBATE{"\n"}
         <Text style={styles.subtext}>
           (Empezando con el defensor. Cualquier otro efecto que ocurre después
-          del combate, tales como habilidades, se resuelven al después de los
+          del combate, tales como habilidades, se resuelven después que los
           efectos de las cartas.)
         </Text>
         {"\n"}
@@ -81,7 +81,7 @@ export default function Attack(props: Props) {
         ]}
       >
         <Text style={[styles.text, { color: "white", textAlign: "center" }]}>
-          Cartas moradas son consideradas como cartas de ataque y defensa.
+          Las cartas moradas son consideradas como cartas de ataque y defensa.
         </Text>
       </View>
     </View>

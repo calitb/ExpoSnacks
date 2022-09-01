@@ -10,8 +10,7 @@ import { Linking, Pressable, Text } from "react-native";
 const MainStack = createNativeStackNavigator();
 export default function App() {
 
-  const handleClick = async () => {
-    const url = "https://www.umleague.net/competitions/18";
+  const handleClick = async (url: string) => {
     const canOpen = await Linking.canOpenURL(url);
     if (canOpen) {
       Linking.openURL(url);
@@ -31,10 +30,15 @@ export default function App() {
             name='Home'
             component={Home}
             options={{ 
-              title: 'Unmatched Ladder 6',
+              title: 'Unmatched Ladder 7',
               headerRight: () => (
-                <Pressable onPress={handleClick} style={{backgroundColor:"#0d6efd", padding: 5}}>
+                <Pressable onPress={()=>handleClick("https://www.umleague.net/competitions/20")} style={{backgroundColor:"#0d6efd", padding: 5}}>
                   <Text style={{ fontSize: 12, color: "white" }}>UM League</Text>
+                </Pressable>
+              ),
+              headerLeft: () => (
+                <Pressable onPress={()=>handleClick("https://gridbeast.gg/unmatched-rules-faq/")} style={{backgroundColor:"#0d6efd", padding: 5}}>
+                  <Text style={{ fontSize: 12, color: "white" }}>FAQS</Text>
                 </Pressable>
               ),
             }}

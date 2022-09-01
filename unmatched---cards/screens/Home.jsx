@@ -5,16 +5,16 @@ import { unmatched } from "../unmatched";
 const DEFAULT_CARD = { width: 124.4, height: 175 };
 
 const ladder = [
-  'Dracula',
-  'Bloody Mary',
-  'Bruce Lee',
-  'Daredevil',
-  'Dr. Ellie Sattler',
-  'Ingen',
+  "Buffy",
+  "Angel",
+  "Spike",
+  "Willow",
+  "Invisible Man",
   'Jekyll & Hyde',
+  "Luke Cage",
+  "Bullseye",
+  "Robin Hood",
   'King Arthur',
-  'Little Red Riding Hood',
-  'Sinbad'
 ]
 
 export default function Home(props) {

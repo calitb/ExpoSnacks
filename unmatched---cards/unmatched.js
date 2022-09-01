@@ -410,6 +410,10 @@ export const unmatched = [
   {
     "name": "Invisible Man",
     "image": require('./assets/backs/invisible.jpg'),
+    "ability": {
+      "en": "At the start of the game, after you place Invisible Man, place 3 fog tokens in separate spaces in his zone.\n\nWhen Invisible Man is on a space with a fog token, add 1 to the value of his defense cards.\n\nInvisible Man may move between two spaces with fog tokens as if they were adjacent.\n\n\nWhen placing fog tokens at the start of the game, place them exactly like you would sidekick tokens (they cannot be placed in a space with a fighter, including Invisible Man.) During the game, fog tokens can only be moved by Invisible Man's card effects. They may move through or end their movement in spaces with fighters or other tokens.",
+      "es": "Al comienzo del juego, después de colocar a Invisible Man, coloca 3 tokens de niebla en espacios separados en su zona.\n\nCuando Invisible Man esté en un espacio con un token de niebla, suma 1 al valor de sus cartas de defensa.\n\nInvisible Man puede moverse entre dos espacios con tokens de niebla como si fueran adyacentes.\n\n\nAl colocar tokens de niebla al comienzo del juego, colóquelos exactamente como lo haría con las fichas de aliados (no se pueden colocar en un espacio con un luchador, incluido Invisible Man). Durante el juego, los tokens de niebla solo se pueden mover mediante los efectos de las cartas de Invisible Man. Pueden moverse o terminar su movimiento en espacios con guerreros u otras fichas."
+    },
     "amount": 30,
     "cards": [
       {
@@ -553,6 +557,10 @@ export const unmatched = [
   {
     "name": "Robin Hood",
     "image": require('./assets/backs/robinhood.jpg'),
+    "ability": {
+      "en": "After you attack, you may move your attacking fighter up to 2 spaces.",
+      "es": "Después de que ataques, puedes mover tu luchador atacante hasta 2 espacios."
+    },
     "amount": 30,
     "cards": [
       {
@@ -1771,8 +1779,143 @@ export const unmatched = [
   },
   {
     "name": "Luke Cage",
+    "image": require('./assets/backs/luke.jpg'),
     "amount": 30,
-    "cards": []
+    "ability": {
+      "en": "Luke Cage takes 2 less combat damage from attacks.\n\n(When defending, Luke Cage wins combat if he takes no damage, even if he didn't play a card.)",
+      "es": "Luke Cage recibe 2 menos de daño de ataque.\n\n(Cuando se defiende, Luke Cage gana el combate si no recibe daño, incluso si no jugó una carta.)"
+    },
+    "cards": [
+      {
+        "name": "Commanding Impact",
+        "type": "attack",
+        "amount": 3,
+        "value": 5,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: Draw 1 card.",
+        "descripcion": "Después del combate: Toma 1 carta."
+      },
+      {
+        "name": "Daughter of the Dragon",
+        "type": "versatile",
+        "amount": 2,
+        "value": 2,
+        "boost": 2,
+        "character": "MISTY",
+        "description": "During combat: If Misty Knight is adjacent to the opposing fighter, the value of this card is 6 instead.",
+        "descripcion": "Durante el combate: Si Misty Knight está adyacente al luchador contrario, el valor de esta carta es 6."
+      },
+      {
+        "name": "Get Paid",
+        "type": "attack",
+        "amount": 2,
+        "value": 4,
+        "boost": 2,
+        "character": "Luke Cage",
+        "description": "After combat: If you won the combat, draw 2 cards.",
+        "descripcion": "Después del combate: Si ganaste el combate, toma 2 cartas."
+      },
+      {
+        "name": "Got My Back?",
+        "type": "defense",
+        "amount": 2,
+        "value": 1,
+        "boost": 2,
+        "character": "Misty",
+        "description": "Immediately: Misty Knight may swap spaces with Luke Cage. If she does, Luke Cage is now the defender.",
+        "descripcion": "Inmediatamente: Misty Knight puede intercambiar espacios con Luke Cage. Si hace eso, Luke Cage es ahora el defensor."
+      },
+      {
+        "name": "Hero For Hire",
+        "type": "attack",
+        "amount": 3,
+        "value": 3,
+        "boost": 1,
+        "character": "Luke Cage",
+        "description": "During combat: You may BOOST this attack.",
+        "descripcion": "Durante el combate: Puede hacerle BOOST a este ataque."
+      },
+      {
+        "name": "Power Man",
+        "type": "defense",
+        "amount": 2,
+        "value": 2,
+        "boost": 1,
+        "character": "Luke Cage",
+        "description": "After combat: Move the opposing fighter up to 3 spaces. You may move them through other opposing fighters. Deal 1 damage to them and each opposing fighter they moved through.",
+        "descripcion": "Después del combate: Mueve el luchador contrario hasta 3 espacios. Puede moverlo a través de otros luchadores contrarios. Hazle 1 daño a él y a cada luchador contrario que haya atravesado."
+      },
+      {
+        "name": "Pushback",
+        "type": "versatile",
+        "amount": 2,
+        "value": 2,
+        "boost": 3,
+        "character": "Misty",
+        "description": "After combat: Move the opposing fighter up to 3 spaces.",
+        "descripcion": "Después del combate: Mueve el luchador contrario hasta 3 espacios."
+      },
+      {
+        "name": "Regroup",
+        "type": "versatile",
+        "amount": 3,
+        "value": 1,
+        "boost": 3,
+        "character": "any",
+        "description": "After combat: Draw 1 card. If you won the combat, draw 2 cards instead.",
+        "descripcion": "Después del combate: Toma 1 carta. Si ganaste el combate, toma 2 cartas en vez de eso."
+      },
+      {
+        "name": "Skin Like Titanium",
+        "type": "defense",
+        "amount": 2,
+        "value": 0,
+        "boost": 1,
+        "character": "Luke Cage",
+        "description": "After combat: If you lost the combat, deal damage to the opposing fighter equal to the amount of combat damage you took.",
+        "descripcion": "Después del combate: Si perdiste el combate, hazle daño a el luchador contrario igual a la cantidad de daño de combate que te han quitado."
+      },
+      {
+        "name": "Still Standing",
+        "type": "attack",
+        "amount": 2,
+        "value": 4,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: If you won the combat, choose 2 cards in your discard pile and shuffle them into your deck.",
+        "descripcion": "Después del combate: Si ganaste el combate, elige 2 cartas en tu pila de descarte y barajalas en tu mazo."
+      },
+      {
+        "name": "Sweet Christmas!",
+        "type": "attack",
+        "amount": 2,
+        "value": 6,
+        "boost": 1,
+        "character": "Luke Cage",
+        "description": "",
+        "descripcion": ""
+      },
+      {
+        "name": "Trash Talk",
+        "type": "defense",
+        "amount": 3,
+        "value": 2,
+        "boost": 1,
+        "character": "Luke Cage",
+        "description": "Immediately: Cancel all effects on your opponent's card.\n\nAfter combat: If you won the combat, end the turn.",
+        "descripcion": "Inmediatamente: Cancela todos los efectos de la carta del oponente.\n\nDespués del combate: Si ganaste el combate, termina el turno (no se activan más efectos)."
+      },
+      {
+        "name": "Where's My Money?",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 1,
+        "character": "Luke Cage",
+        "description": "Place Luke Cage adjacent to the nearest opposing fighter. Gain 1 action.",
+        "descripcion": "Coloca Luke Cage adyacente al luchador contrario más cercano. Gana 1 acción."
+      }
+    ]
   },
   {
     "name": "Ghost Rider",
@@ -2401,29 +2544,538 @@ export const unmatched = [
   {
     "name": "Buffy",
     "amount": 30,
+    "image": require('./assets/backs/buffy.jpg'),
+    "ability": {
+      "en": "Buffy may move through spaces containing opposing fighters (including when she is moved by effects).\n\nAt the start of the game, after heroes have been placed in their starting spaces, choose Xander or Giles as your sidekick and shuffle their 5 cards into your base deck of 25 cards, before drawing your starting hand.",
+      "es": "Buffy puede moverse por espacios que contengan luchadores enemigos (incluyendo cuando se mueve por efectos).\n\nAl comienzo del juego, después de que se hayan colocado los heroes en sus espacios iniciales, elige a Xander o Giles como tu compañero y baraja sus 5 cartas en tu mazo base de 25 cartas, antes de tomar tu mano inicial."
+    },
     "cards": [
-      
+      {
+        "name": "Cartwheel Kick",
+        "type": "defense",
+        "amount": 2,
+        "value": 2,
+        "boost": 2,
+        "character": "Buffy",
+        "description": "After combat: You may move Buffy up to 3 spaces. Then, deal 1 damage to each opposing fighter adjacent to her.",
+        "descripcion": "Después del combate: Puedes mover Buffy hasta 3 espacios. Luego, hace 1 de daño a cada luchador enemigo adyacente a ella."
+      },
+      {
+        "name": "Daring Strike",
+        "type": "attack",
+        "amount": 3,
+        "value": 4,
+        "boost": 3,
+        "character": "any",
+        "description": "After combat: If you won the combat, draw 2 cards. Otherwise, take 1 damage.",
+        "descripcion": "Después del combate: Si ganaste el combate, toma 2 cartas. Si no, recibe 1 de daño."
+      },
+      {
+        "name": "Feint",
+        "type": "versatile",
+        "amount": 3,
+        "value": 2,
+        "boost": 2,
+        "character": "any",
+        "description": "Immediately: Cancel all effects on your opponent's card.",
+        "descripcion": "Inmediatamente: Cancela todos los efectos de la carta del oponente."
+      },
+      {
+        "name": "Insight",
+        "type": "scheme",
+        "amount": 3,
+        "boost": 3,
+        "character": "Giles",
+        "description": "Choose an opponent and look at their hand. Choose 1 card in their hand for them to discard.",
+        "descripcion": "Elige un oponente y mira su mano. Elige 1 carta en su mano para que la descarte."
+      },
+      {
+        "name": "Military Knowledge",
+        "type": "attack",
+        "amount": 3,
+        "value": 4,
+        "boost": 3,
+        "character": "Xander",
+        "description": "After combat: Draw 1 card.",
+        "descripcion": "Después del combate: Toma 1 carta."
+      },
+      {
+        "name": "Mr. Pointy",
+        "type": "attack",
+        "amount": 2,
+        "value": 5,
+        "boost": 4,
+        "character": "Buffy",
+        "description": "",
+        "descripcion": ""
+      },
+      {
+        "name": "Rapid Recovery",
+        "type": "versatile",
+        "amount": 3,
+        "value": 3,
+        "boost": 3,
+        "character": "Buffy",
+        "description": "After combat: Buffy recovers 1 health.",
+        "descripcion": "Después del combate: Buffy recupera 1 de salud."
+      },
+      {
+        "name": "Regroup",
+        "type": "versatile",
+        "amount": 3,
+        "value": 1,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: Draw 1 card. If you won the combat, draw 2 cards instead.",
+        "descripcion": "Después del combate: Toma 1 carta. Si ganaste el combate, toma 2 cartas en vez de una."
+      },
+      {
+        "name": "Right-hand Man",
+        "type": "versatile",
+        "amount": 2,
+        "value": 2,
+        "boost": 3,
+        "character": "Xander",
+        "description": "During combat: if Xander is adjacent to Buffy, the value of this card is 6 instead.",
+        "descripcion": "Durante el combate: si Xander está adyacente a Buffy, el valor de esta carta es 6."
+      },
+      {
+        "name": "Skirmish",
+        "type": "versatile",
+        "amount": 3,
+        "value": 4,
+        "boost": 3,
+        "character": "any",
+        "description": "After combat: If you won the combat, choose one of the fighters in the combat and move them up to 2 spaces.",
+        "descripcion": "Después del combate: Si ganaste el combate, elige uno de los luchadores en el combate y muevelo hasta 2 espacios."
+      },
+      {
+        "name": "Slayer's Strength",
+        "type": "versatile",
+        "amount": 3,
+        "value": 4,
+        "boost": 3,
+        "character": "Buffy",
+        "description": "After combat: You may move all fighters adjacent to Buffy to another space in their zone. Then, deal 1 damage to each fighter you moved.",
+        "descripcion": "Después del combate: Puedes mover todos los luchadores adyacentes a Buffy a otro espacio en su zona. Luego, haz 1 de daño a cada luchador que moviste."
+      },
+      {
+        "name": "Swift Strike",
+        "type": "attack",
+        "amount": 3,
+        "value": 3,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: Move your fighter up to 4 spaces.",
+        "descripcion": "Después del combate: Mueve tu luchador hasta 4 espacios."
+      },
+      {
+        "name": "Training",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 3,
+        "character": "Giles",
+        "description": "Draw 3 cards.",
+        "descripcion": "Toma 3 cartas."
+      },
     ]
   },
   {
     "name": "Angel",
     "amount": 30,
+    "image": require('./assets/backs/angel.jpg'),
+    "ability": {
+      "en": "After Angel or Faith attacks, if you lost the combat, draw 1 card.",
+      "es": "Después que Angel o Faith ataquen, si perdiste el combate, toma 1 carta."
+    },
     "cards": [
-      
+      {
+        "name": "Angelus, Scourge of Europe",
+        "type": "attack",
+        "amount": 3,
+        "value": 5,
+        "boost": 3,
+        "character": "Angel",
+        "description": "",
+        "descripcion": ""
+      },
+      {
+        "name": "Brooding",
+        "type": "versatile",
+        "amount": 2,
+        "value": 3,
+        "boost": 2,
+        "character": "Angel",
+        "description": "After combat: If you lost the combat, the opposing fighter takes 1 damage.",
+        "descripcion": "Después del combate: Si perdiste el combate, el luchador oponente recibe 1 de daño."
+      },
+      {
+        "name": "Cursed with a Soul",
+        "type": "attack",
+        "amount": 2,
+        "value": 4,
+        "boost": 3,
+        "character": "Angel",
+        "description": "After combat: If you lost the combat, recover 1 health.",
+        "descripcion": "Después del combate: Si perdiste el combate, recupera 1 de salud."
+      },
+      {
+        "name": "Disengage",
+        "type": "attack",
+        "amount": 3,
+        "value": 4,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: Choose an empty space in this fighter's zone. Place this fighter in that space.",
+        "descripcion": "Después del combate: Elige un espacio vacío en la zona de este luchador. Coloca este luchador en ese espacio."
+      },
+      {
+        "name": "Feint",
+        "type": "versatile",
+        "amount": 3,
+        "value": 2,
+        "boost": 2,
+        "character": "any",
+        "description": "Immediately: Cancel all effects on your opponent's card.",
+        "descripcion": "Inmediatamente: cancela todos los efectos de la carta del oponente."
+      },
+      {
+        "name": "Five by Five",
+        "type": "attack",
+        "amount": 2,
+        "value": 5,
+        "boost": 3,
+        "character": "Faith",
+        "description": "After combat: Move Faith up to 5 spaces. She may move through opposing fighters.",
+        "descripcion": "Después del combate: Mueve Faith hasta 5 espacios. Puede moverse por los luchadores oponentes."
+      },
+      {
+        "name": "Haunted by the Faces",
+        "type": "defense",
+        "amount": 2,
+        "value": 3,
+        "boost": 2,
+        "character": "Angel",
+        "description": "After combat: If you lost the combat, you may place Angel in any space in his zone.",
+        "descripcion": "Después del combate: Si perdiste el combate, puedes colocar Angel en cualquier espacio en su zona."
+      },
+      {
+        "name": "	Killer of the Dead",
+        "type": "scheme",
+        "amount": 3,
+        "boost": 3,
+        "character": "Faith",
+        "description": "Deal 2 damage to one opposing fighter adjacent to Faith.",
+        "descripcion": "Haz 2 de daño a un luchador oponente adyacente a Faith."
+      },
+      {
+        "name": "Momentous Shift",
+        "type": "versatile",
+        "amount": 3,
+        "value": 3,
+        "boost": 1,
+        "character": "any",
+        "description": "During combat: If your fighter started this turn in a different space, this card's value is 5 instead.",
+        "descripcion": "Durante el combate: Si tu luchador comenzó este turno en un espacio diferente, estea carta tiene un valor de 5 en vez de 3."
+      },
+      {
+        "name": "Regroup",
+        "type": "versatile",
+        "amount": 3,
+        "value": 1,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: Draw 1 card. If you won the combat, draw 2 cards instead.",
+        "descripcion": "Después del combate: Toma 1 carta. Si ganaste el combate, toma 2 cartas en vez de 1."
+      },
+      {
+        "name": "The Rogue Slayer",
+        "type": "versatile",
+        "amount": 2,
+        "value": 3,
+        "boost": 3,
+        "character": "Faith",
+        "description": "After combat: Deal 1 damage to each opposing fighter adjacent to Faith.",
+        "descripcion": "Después del combate: Haz 1 de daño a cada luchador oponente adyacente a Faith."
+      },
+      {
+        "name": "Wisdom of Ages",
+        "type": "attack",
+        "amount": 2,
+        "value": 3,
+        "boost": 2,
+        "character": "Angel",
+        "description": "After combat: Draw 1 card.",
+        "descripcion": "Después del combate: Toma 1 carta."
+      }
     ]
   },
   {
     "name": "Spike",
     "amount": 30,
+    "image": require('./assets/backs/spike.jpg'),
+    "ability": {
+      "en": "At the start of your turn, you may place a Shadow token in any space adjacent to Spike or Drusilla.",
+      "es": "Al comienzo de tu turno, puedes colocar un token de Sombras en cualquier espacio adyacente a Spike o Drusilla."
+    },
     "cards": [
-      
+      {
+        "name": "Always Surprising",
+        "type": "versatile",
+        "amount": 3,
+        "value": 1,
+        "boost": 2,
+        "character": "Drusilla",
+        "description": "During combat: BLIND BOOST this card. If Drusilla's space has a shadow token, double the BOOST value.",
+        "descripcion": "Durante el combate: BLIND BOOST esta carta. Si el espacio de Drusilla tiene un token de sombras, dobla el valor del BOOST."
+      },
+      {
+        "name": "Arrogance",
+        "type": "attack",
+        "amount": 1,
+        "value": 4,
+        "boost": 2,
+        "character": "Spike",
+        "description": "During combat: You may discard your hand (even if your hand is empty). If you do, the value of this card is 6 instead.",
+        "descripcion": "Durante el combate: Puedes descartar tu mano (incluso si tu mano está vacía). Si lo haces, el valor de esta carta es 6 en vez de 4."
+      },
+      {
+        "name": "Bloody Hell!",
+        "type": "versatile",
+        "amount": 3,
+        "value": 3,
+        "boost": 2,
+        "character": "Spike",
+        "description": "After combat: Deal 1 damage to the opposing fighter, then deal an additional 1 damage for each space with a shadow token adjacent to them.",
+        "descripcion": "Después del combate: Haz 1 de daño al luchador oponente, luego haz 1 de daño adicional por cada espacio con un token de sombras adyacente a ellos."
+      },
+      {
+        "name": "Empathy",
+        "type": "versatile",
+        "amount": 2,
+        "value": 3,
+        "boost": 3,
+        "character": "Drusilla",
+        "description": "After combat: Draw 1 card. If the opposing fighter is in a space with a shadow token, draw 3 cards instead.",
+        "descripcion": "Después del combate: Toma 1 carta. Si el luchador oponente está en un espacio con un token de sombras, toma 3 cartas en vez de 1."
+      },
+      {
+        "name": "Feint",
+        "type": "versatile",
+        "amount": 3,
+        "value": 3,
+        "boost": 2,
+        "character": "any",
+        "description": "Immediately: Cancel all effects on your opponent's card.",
+        "descripcion": "Inmediatamente: Cancela todos los efectos de la carta del oponente."
+      },
+      {
+        "name": "Leap Away",
+        "type": "versatile",
+        "amount": 2,
+        "value": 4,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: If you won the combat, choose one of the fighters in the combat and move them up to 4 spaces.",
+        "descripcion": "Después del combate: Si ganaste el combate, elige uno de los luchadores en el combate y los mueves hasta 4 espacios."
+      },
+      {
+        "name": "Let's Dance",
+        "type": "versatile",
+        "amount": 3,
+        "value": 4,
+        "boost": 3,
+        "character": "Spike",
+        "description": "During combat: If Spike or the opposing fighter is in a space with a shadow token, you may BOOST this card.",
+        "descripcion": "Durante el combate: Si Spike o el luchador oponente están en un espacio con un token de sombras, puedes BOOST esta carta."
+      },
+      {
+        "name": "Regroup",
+        "type": "versatile",
+        "amount": 3,
+        "value": 1,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: Draw 1 card. If you won the combat, draw 2 cards instead.",
+        "descripcion": "Después del combate: Toma 1 carta. Si ganaste el combate, toma 2 cartas en vez de 1."
+      },
+      {
+        "name": "Seek the Shadows",
+        "type": "scheme",
+        "amount": 4,
+        "boost": 2,
+        "character": "Spike",
+        "description": "Draw 2 cards. Place a shadow token in Spike's space and each space adjacent to it.",
+        "descripcion": "Toma 2 cartas. Coloca un token de sombras en el espacio de Spike y en cada espacio adyacente."
+      },
+      {
+        "name": "Skirmish",
+        "type": "versatile",
+        "amount": 2,
+        "value": 4,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: If you won the combat, choose one of the fighters in the combat and move them up to 2 spaces.",
+        "descripcion": "Después del combate: Si ganaste el combate, elige uno de los luchadores en el combate y los mueves hasta 2 espacios."
+      },
+      {
+        "name": "The Rush",
+        "type": "attack",
+        "amount": 2,
+        "value": 3,
+        "boost": 3,
+        "character": "Spike",
+        "description": "During combat: If Spike or the opposing fighter is in a space with a shadow token, the value of this card is 5 instead.",
+        "descripcion": "Durante el combate: Si Spike o el luchador oponente están en un espacio con un token de sombras, el valor de esta carta es 5 en vez de 3."
+      },
+      {
+        "name": "The Sight",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 2,
+        "character": "Drusilla",
+        "description": "Choose an opponent and look at their hand. Choose a card for them to discard. If any of their fighters are in a space with a shadow token, choose 2 cards for them to discard instead.",
+        "descripcion": "Elige un oponente y mira su mano. Elige una carta para que la descarte. Si alguno de sus luchadores está en un espacio con un token de sombras, elige 2 cartas para que lo descarte en vez de 1."
+      }
     ]
   },
   {
     "name": "Willow",
     "amount": 30,
+    "image": require('./assets/backs/willow.jpg'),
+    "ability": {
+      "en": "When Willow or Tara is dealt damage, Willow becomes Dark Willow.\n\nAt the end of your turn, if Dark Willow is adjacent to Tara, she becomes Willow.",
+      "es": "Cuando Willow o Tara sufren daño, Willow se convierte en Dark Willow.\n\nAl final de tu turno, si Dark Willow está adyacente a Tara, ella se convierte en Willow."
+    },
     "cards": [
-      
+      {
+        "name": "Black Magic",
+        "type": "versatile",
+        "amount": 3,
+        "value": 3,
+        "boost": 3,
+        "character": "Willow",
+        "description": "During combat: (DARK) BLIND BOOST this card.",
+        "descripcion": "Durante el combate: (DARK) BLIND BOOST esta carta."
+      },
+      {
+        "name": "Feint",
+        "type": "versatile",
+        "amount": 3,
+        "value": 2,
+        "boost": 2,
+        "character": "any",
+        "description": "Immediately: Cancel all effects on your opponent's card.",
+        "descripcion": "Inmediatamente: Cancela todos los efectos de la carta del oponente."
+      },
+      {
+        "name": "Flayed Alive",
+        "type": "attack",
+        "amount": 3,
+        "value": 4,
+        "boost": 3,
+        "character": "Willow",
+        "description": "During combat: (DARK) BLIND BOOST this attack.",
+        "descripcion": "Durante el combate: (DARK) BLIND BOOST esta ataque."
+      },
+      {
+        "name": "Hacker",
+        "type": "versatile",
+        "amount": 2,
+        "value": 2,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: Look at the top card of your deck, then choose to put it on the top of your deck or the bottom of your deck.",
+        "descripcion": "Después del combate: Mira la carta superior de tu deck, luego elige ponerla en la parte superior o inferior de tu deck."
+      },
+      {
+        "name": "Knowledge of the Craft",
+        "type": "versatile",
+        "amount": 2,
+        "value": 4,
+        "boost": 2,
+        "character": "Tara",
+        "description": "After combat: If you won the combat, choose a card in your discard pile and add it to your hand.",
+        "descripcion": "Después del combate: Si ganaste el combate, elige una carta en tu descarte y agrégala a tu mano."
+      },
+      {
+        "name": "Love and Loss",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 3,
+        "character": "Willow",
+        "description": "Draw 2 cards. (DARK) Discard the top 2 cards of your deck. Deal 3 damage to a sidekick in your zone (even if it's your own).",
+        "descripcion": "Toma 2 cartas. (DARK) Descarta las 2 cartas superiores de tu deck. Haz 3 de daño a un sidekick de tu zona (incluso si el tuyo)."
+      },
+      {
+        "name": "Meditation",
+        "type": "defense",
+        "amount": 2,
+        "value": 5,
+        "boost": 2,
+        "character": "Willow",
+        "description": "After combat: (DARK) Become Willow.",
+        "descripcion": "Después del combate: (DARK) Se convierte en Willow."
+      },
+      {
+        "name": "Regroup",
+        "type": "versatile",
+        "amount": 3,
+        "value": 1,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: Draw 1 card. If you won the combat, draw 2 cards instead.",
+        "descripcion": "Después del combate: Toma 1 carta. Si ganaste el combate, toma 2 cartas en vez de 1."
+      },
+      {
+        "name": "Rending Shot",
+        "type": "attack",
+        "amount": 2,
+        "value": 3,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: Move the opposing fighter up to 3 spaces.",
+        "descripcion": "Después del combate: Mueve el luchador oponente hasta 3 espacios."
+      },
+      {
+        "name": "Resurrect",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 2,
+        "character": "Willow",
+        "description": "Choose a friendly fighter who has been defeated. Place that fighter in any space in Willow's zone and set their health to 3.",
+        "descripcion": "Elige un luchador aliado que haya sido derrotado. Coloca ese luchador en cualquier espacio de tu zona con salud a 3."
+      },
+      {
+        "name": "Revoke",
+        "type": "versatile",
+        "amount": 2,
+        "value": 3,
+        "boost": 2,
+        "character": "Tara",
+        "description": "Immediately: Cancel any abilities on your opponent's card.",
+        "descripcion": "Inmediatamente: Cancela todos los efectos de la carta del oponente."
+      },
+      {
+        "name": "Swift Strike",
+        "type": "attack",
+        "amount": 2,
+        "value": 3,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: Move your fighter up to 4 spaces.",
+        "descripcion": "Después del combate: Mueve tu luchador hasta 4 espacios."
+      },
+      {
+        "name": "When Good Magic Fails",
+        "type": "attack",
+        "amount": 2,
+        "value": 4,
+        "boost": 3,
+        "character": "Willow",
+        "description": "After combat: (DARK) Move Willow to any space in her zone. Discard the top card of your deck.",
+        "descripcion": "Después del combate: (DARK) Mueve Willow a cualquier espacio de su zona. Descarta la carta superior de tu deck."
+      },
     ]
   },
   {
@@ -2518,8 +3170,131 @@ export const unmatched = [
   {
     "name": "Bullseye",
     "amount": 30,
+    "image": require('./assets/backs/bullseye.jpg'),
+    "ability": {
+      "en": "Bullseye can attack from up to 5 spaces away (ignoring zones).\n\nBullseye's special 5 space attack range is in addition to also being able to attack any opposing fighter in his zone.",
+      "es": "Bullseye puede atacar desde hasta 5 espacios de distancia (ignorando zonas).\n\nLa distancia de ataque especial de Bullseye es adicional a poder atacar cualquier luchador en su zona."
+    },
     "cards": [
-      
+      {
+        "name": "Arrogant But Effective",
+        "type": "versatile",
+        "amount": 3,
+        "value": 2,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: You are considered to have won this combat. Move Bullseye up to 2 spaces.",
+        "descripcion": "Después del combate: Eres considerado ganador de este combate. Mueve Bullseye hasta 2 espacios."
+      },
+      {
+        "name": "Feint",
+        "type": "versatile",
+        "amount": 2,
+        "value": 2,
+        "boost": 2,
+        "character": "any",
+        "description": "Immediately: Cancel all effects on your opponent's card.",
+        "descripcion": "Inmediatamente: Cancela todos los efectos de la carta del oponente."
+      },
+      {
+        "name": "	For My Next Trick",
+        "type": "attack",
+        "amount": 3,
+        "value": 2,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: Move Bullseye up to 1 space. Draw 1 card. Gain 1 action.",
+        "descripcion": "Después del combate: Mueve Bullseye hasta 1 espacio. Roba 1 carta. Gana 1 acción."
+      },
+      {
+        "name": "I Never Miss",
+        "type": "attack",
+        "amount": 4,
+        "value": 3,
+        "boost": 2,
+        "character": "any",
+        "description": "During combat: You may BOOST this attack. If you don't BOOST this attack, draw 1 card.",
+        "descripcion": "Durante el combate: Puedes BOOST este ataque. Si no lo haces, toma 1 carta."
+      },
+      {
+        "name": "I Planned To Be Here",
+        "type": "attack",
+        "amount": 2,
+        "value": 2,
+        "boost": 3,
+        "character": "any",
+        "description": "During combat: If you started your turn in your current space, the value of this card is 5 instead.",
+        "descripcion": "Durante el combate: Si empezaste tu turno en tu espacio actual, el valor de esta carta es 5."
+      },
+      {
+        "name": "I'm Better And I'll Prove It",
+        "type": "versatile",
+        "amount": 2,
+        "value": 2,
+        "boost": 2,
+        "character": "any",
+        "description": "During combat: If you already won a combat this turn, the value of this card is 6 instead.",
+        "descripcion": "Durante el combate: Si ya ganaste un combate este turno, el valor de esta carta es 6."
+      },
+      {
+        "name": "Master Strategist",
+        "type": "versatile",
+        "amount": 2,
+        "value": 3,
+        "boost": 3,
+        "character": "any",
+        "description": "After combat: Move Bullseye exactly 4 spaces. You may move through opposing fighters.",
+        "descripcion": "Después del combate: Mueve Bullseye exactamente 4 espacios. Puedes moverse a través de luchadores oponentes."
+      },
+      {
+        "name": "Ricochet",
+        "type": "versatile",
+        "amount": 3,
+        "value": 3,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: If the opposing fighter was not defeated, deal 1 damage to a fighter in the opposing fighter's zone.",
+        "descripcion": "Después del combate: Si el luchador oponente no fue derrotado, inflige 1 de daño a un luchador en la zona del oponente."
+      },
+      {
+        "name": "Right Between The Eyes",
+        "type": "versatile",
+        "amount": 2,
+        "value": 3,
+        "boost": 3,
+        "character": "any",
+        "description": "Immediately: If you already won a combat this turn, your opponent discards 1 card.",
+        "descripcion": "Inmediatamente: Si ya ganaste un combate este turno, tu oponente descarta 1 carta."
+      },
+      {
+        "name": "Study The Target",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 3,
+        "character": "any",
+        "description": "Draw 2 cards.If you won a combat this turn, draw 1 additional card and gain 1 action.",
+        "descripcion": "Roba 2 cartas. Si ganaste un combate este turno, roba 1 carta adicional y gana 1 acción."
+      },
+      {
+        "name": "Tactical Retreat",
+        "type": "defense",
+        "amount": 3,
+        "value": 3,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: Place Bullseye in a space that shares no zones with his current space.",
+        "descripcion": "Después del combate: Coloca a Bullseye en un espacio que no comparta ninguna zona con su espacio actual."
+      },
+      {
+        "name": "World's Greatest Assassin",
+        "type": "attack",
+        "amount": 2,
+        "value": 4,
+        "boost": 3,
+        "character": "any",
+        "description": "Immediately: If you already won a combat this turn, ignore the value of your opponent's card.",
+        "descripcion": "Inmediatamente: Si ya ganaste un combate este turno, ignora el valor de la carta del oponente."
+      }
     ]
   },
   {
