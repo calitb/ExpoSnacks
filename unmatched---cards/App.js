@@ -30,17 +30,17 @@ export default function App() {
             name='Home'
             component={Home}
             options={{ 
-              title: 'Unmatched Ladder 7',
-              headerRight: () => (
-                <Pressable onPress={()=>handleClick("https://www.umleague.net/competitions/20")} style={{backgroundColor:"#0d6efd", padding: 5}}>
-                  <Text style={{ fontSize: 12, color: "white" }}>UM League</Text>
-                </Pressable>
-              ),
-              headerLeft: () => (
-                <Pressable onPress={()=>handleClick("https://gridbeast.gg/unmatched-rules-faq/")} style={{backgroundColor:"#0d6efd", padding: 5}}>
-                  <Text style={{ fontSize: 12, color: "white" }}>FAQS</Text>
-                </Pressable>
-              ),
+              title: 'Unmatched',
+              // headerRight: () => (
+              //   <Pressable onPress={()=>handleClick("https://www.umleague.net/competitions/24")} style={{backgroundColor:"#0d6efd", padding: 5}}>
+              //     <Text style={{ fontSize: 12, color: "white" }}>UM League</Text>
+              //   </Pressable>
+              // ),
+              // headerLeft: () => (
+              //   <Pressable onPress={()=>handleClick("https://gridbeast.gg/unmatched-rules-faq/")} style={{backgroundColor:"#0d6efd", padding: 5}}>
+              //     <Text style={{ fontSize: 12, color: "white" }}>FAQS</Text>
+              //   </Pressable>
+              // ),
             }}
           />
           <MainStack.Screen

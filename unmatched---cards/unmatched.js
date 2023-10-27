@@ -1506,7 +1506,132 @@ export const unmatched = [
   {
     "name": "Achilles",
     "amount": 30,
-    "cards": []
+    "image": require('./assets/backs/achilles.jpg'),
+    "ability": {
+      "en": "When Patroclus is defeated, discard 2 random cards.\n\nWhile Patroclus is defeated: Add +2 to the value of all Achilles' attacks and if Achilles wins combat, draw 1 card.\n\nWhile Patroclus is defeated, if Achilles wins combat he draws 1 card after any AFTER COMBAT effects have resolved.",
+      "es": "Cuando Patroclus es derrotado, descarta 2 cartas al azar.\n\nMientras Patroclus está derrotado: Añade +2 al valor de todos los ataques de Achilles y si Achilles gana el combate, toma 1 carta.\n\nMientras Patroclus está derrotado, si Achilles gana el combate, toma 1 carta después de que se resuelvan todos los efectos DESPUÉS DEL COMBATE."
+    },
+    "cards": [
+      {
+        "name": "Achilles' Heel",
+        "type": "defense",
+        "amount": 3,
+        "value": 4,
+        "boost": 2,
+        "character": "ACHILLES",
+        "description": "After combat: If you lost the combat, your opponent gains 1 action.",
+        "descripcion": "Después del combate: Si perdiste el combate, tu oponente gana 1 acción."
+      },
+      {
+        "name": "Battle Frenzy",
+        "type": "attack",
+        "amount": 2,
+        "value": 3,
+        "boost": 2,
+        "character": "PATROCLUS",
+        "description": "After combat: Deal 2 damage to both fighters in the combat.",
+        "descripcion": "Después del combate: Haz 2 de daño a ambos luchadores en el combate."
+      },
+      {
+        "name": "Battle Hardened",
+        "type": "versatile",
+        "amount": 2,
+        "value": 2,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: Choose a card in your discard pile and return it to your hand.",
+        "descripcion": "Después del combate: Escoge una carta en tu pila de descartes y regresa esa carta a tu mano."
+      },
+      {
+        "name": "Blessed By Hermes",
+        "type": "versatile",
+        "amount": 2,
+        "value": 3,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: Move each of your fighters up to 3 spaces. They may move through opposing fighters.",
+        "descripcion": "Después del combate: Mueve cada uno de tus luchadores hasta 3 espacios. Pueden moverse a través de luchadores opuestos."
+      },
+      {
+        "name": "Brothers In Arms",
+        "type": "attack",
+        "amount": 3,
+        "value": 4,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: If Patroclus is not defeated, gain 1 action.",
+        "descripcion": "Después del combate: Si Patroclus no está derrotado, gana 1 acción."
+      },
+      {
+        "name": "Feint",
+        "type": "versatile",
+        "amount": 3,
+        "value": 2,
+        "boost": 1,
+        "character": "any",
+        "description": "Immediately: Cancel all effects on your opponent's card.",
+        "descripcion": "Inmediatamente: Cancela todos los efectos en la carta de tu oponente."
+      },
+      {
+        "name": "Skirmish",
+        "type": "versatile",
+        "amount": 3,
+        "value": 4,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: If you won the combat, choose one of the fighters in the combat and move them up to 2 spaces.",
+        "descripcion": "Después del combate: Si ganaste el combate, escoge uno de los luchadores en el combate y muevelo hasta 2 espacios."
+      },
+      {
+        "name": "Spear Throw",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 1,
+        "character": "ACHILLES",
+        "description": "Deal 2 damage to an opposing fighter in Achilles' zone.",
+        "descripcion": "Haz 2 de daño a un luchador opuesto en la zona de Achilles."
+      },
+      {
+        "name": "Test For Weakness",
+        "type": "attack",
+        "amount": 3,
+        "value": 1,
+        "boost": 3,
+        "character": "any",
+        "description": "After combat: RELENTLESS ASSAULT: 3 ATK",
+        "descripcion": "Después del combate: RELENTLESS ASSAULT: 3 ATAQUE"
+      },
+      {
+        "name": "The Day of Your Doom",
+        "type": "attack",
+        "amount": 2,
+        "value": 3,
+        "boost": 2,
+        "character": "PATROCLUS",
+        "description": "During combat: You may deal 2 damage to Patroclus. If you do, the value of this attack is 5 instead.",
+        "descripcion": "Durante el combate: Puedes hacer 2 de daño a Patroclus. Si lo haces, el valor de este ataque es 5 en su lugar."
+      },
+      {
+        "name": "Under Achilles' Helm",
+        "type": "defense",
+        "amount": 3,
+        "value": 2,
+        "boost": 4,
+        "character": "ACHILLES",
+        "description": "Immediately: If Patroclus is not defeated, Achilles may swap spaces with him. If he does, Patroclus is now the defender.",
+        "descripcion": "Inmediatamente: Si Patroclus no está derrotado, Achilles puede intercambiar espacios con él. Si lo hace, Patroclus es ahora el defensor."
+      },
+      {
+        "name": "Wily Fighting",
+        "type": "versatile",
+        "amount": 2,
+        "value": 3,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: Deal 1 damage to each opposing fighter adjacent to your fighter.",
+        "descripcion": "Después del combate: Haz 1 de daño a cada luchador opuesto adyacente a tu luchador."
+      },
+    ]
   },
   {
     "name": "Bloody Mary",
@@ -1775,7 +1900,130 @@ export const unmatched = [
   {
     "name": "Yennenga",
     "amount": 30,
-    "cards": []
+    "ability": {
+      "en": "If Yennenga would take damage, you may assign any amount of that damage to one or more Archers in her zone instead. (You may not assign more damage to an Archer than their remaining health.)\n\nIf damage would be dealt to Yennenga and an Archer at the same time, Yennenga cannot assign damage from herself to that Archer if the Archer would already be defeated by the damage it took. (Yennenga cannot use her ability to make damage disappear.)",
+      "es": "Si Yennenga va a recibir daño, puedes asignar cualquier cantidad de ese daño a uno o más Arqueros en su zona en su lugar. (No puedes asignar más daño a un Arquero que su salud restante.)\n\nSi el daño se le va a hacer a Yennenga y a un Arquero al mismo tiempo, Yennenga no puede asignar daño de ella misma a ese Arquero si el Arquero ya estaría derrotado por el daño que recibió. (Yennenga no puede usar su habilidad para hacer que el daño desaparezca.)"
+    },
+    "cards": [
+      {
+        "name": "Divide and Conquer",
+        "type": "versatile",
+        "amount": 2,
+        "value": 2,
+        "boost": 1,
+        "character": "ARCHER",
+        "description": "During combat: If your fighter is not in Yennenga's zone, the value of this card is a 4 instead.",
+        "descripcion": "Durante el combate: Si tu luchador no está en la zona de Yennenga, el valor de esta carta es 4 en su lugar."
+      },
+      {
+        "name": "Jaws of the Beast",
+        "type": "versatile",
+        "amount": 3,
+        "value": 3,
+        "boost": 3,
+        "character": "YENNENGA",
+        "description": "During combat: For each zone the opposing fighter is in, increase the value of this card by +1.",
+        "descripcion": "Durante el combate: Por cada zona en la que se encuentre el luchador contrario, aumenta el valor de esta carta en +1."
+      },
+      {
+        "name": "Master of the Hunt",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 3,
+        "character": "YENNENGA",
+        "description": "Gain 2 actions.",
+        "descripcion": "Gana 2 acciones."
+      },
+      {
+        "name": "Momentous Shift",
+        "type": "versatile",
+        "amount": 3,
+        "value": 3,
+        "boost": 2,
+        "character": "any",
+        "description": "During combat: If your fighter started this turn in a different space, this card's value is 5 instead.",
+        "descripcion": "Durante el combate: Si tu peleador comenzó este turno en un espacio diferente, el valor de esta carta es 5 en su lugar."
+      },
+      {
+        "name": "One With The Land",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 2,
+        "character": "YENNENGA",
+        "description": "Move each of your fighters up to 2 spaces. Each of your fighters recovers 1 health. Draw 1 card.",
+        "descripcion": "Mueve cada uno de tus luchadores hasta 2 espacios. Cada uno de tus luchadores recupera 1 de salud. Toma 1 carta."
+      },
+      {
+        "name": "Pin the Prey",
+        "type": "versatile",
+        "amount": 2,
+        "value": 1,
+        "boost": 2,
+        "character": "ARCHER",
+        "description": "After combat: Move the opposing fighter up to 4 spaces. Your opponent discards 1 card.",
+        "descripcion": "Después del combate: Mueve el luchador contrario hasta 4 espacios. Tu oponente descarta 1 carta."
+      },
+      {
+        "name": "Point Blank",
+        "type": "versatile",
+        "amount": 3,
+        "value": 2,
+        "boost": 2,
+        "character": "YENNENGA",
+        "description": "After combat: If the opposing fighter is adjacent to Yennenga, deal them 2 damage.",
+        "descripcion": "Después del combate: Si el luchador contrario está adyacente a Yennenga, hazle 2 de daño."
+      },
+      {
+        "name": "Rain of Arrows",
+        "type": "attack",
+        "amount": 3,
+        "value": 3,
+        "boost": 3,
+        "character": "YENNENGA",
+        "description": "After combat: VOLLEY: 3 ATK",
+        "descripcion": "Después del combate: VOLLEY"
+      },
+      {
+        "name": "Shield Formation",
+        "type": "defense",
+        "amount": 2,
+        "value": 3,
+        "boost": 3,
+        "character": "YENNENGA",
+        "description": "Immediately: Your opponent may discard a card. If they don't, return a defeated Archer to a space in Yennenga's zone.",
+        "descripcion": "Inmediatamente: Tu oponente puede descartar una carta. Si no lo hace, regresa un Arquero derrotado a un espacio en la zona de Yennenga."
+      },
+      {
+        "name": "Skirmish",
+        "type": "versatile",
+        "amount": 2,
+        "value": 4,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: If you won the combat, choose one of the fighters in the combat and move them up to 2 spaces.",
+        "descripcion": "Después del combate: Si ganaste el combate, escoge uno de los luchadores en el combate y muevelo hasta 2 espacios."
+      },
+      {
+        "name": "Stallion Charge",
+        "type": "versatile",
+        "amount": 3,
+        "value": 3,
+        "boost": 3,
+        "character": "YENNENGA",
+        "description": "After combat: Move Yennenga up to 5 spaces. She may move through opposing fighters. Then, deal 1 damage to each opposing fighter she moved through.",
+        "descripcion": "Después del combate: Mueve a Yennenga hasta 5 espacios. Ella puede moverse a través de luchadores opuestos. Luego, haz 1 de daño a cada luchador contrario que haya atravesado."
+      },
+      {
+        "name": "Surprise Volley",
+        "type": "attack",
+        "amount": 3,
+        "value": 3,
+        "boost": 3,
+        "character": "any",
+        "description": "Immediately: You may return a defeated Archer to a space in the opposing fighter's zone. If you do, that Archer is now the attacker. If not, gain 1 action.",
+        "descripcion": "Inmediatamente: Puedes regresar un Arquero derrotado a un espacio en la zona del luchador contrario. Si lo haces, ese Arquero es ahora el atacante. Si no, gana 1 acción."
+      },
+    ]
   },
   {
     "name": "Luke Cage",
@@ -1919,13 +2167,260 @@ export const unmatched = [
   },
   {
     "name": "Ghost Rider",
+    "image": require('./assets/backs/ghostrider.jpg'),
     "amount": 30,
-    "cards": []
+    "ability": {
+      "en": "Ghost Rider starts the game with 5 Hellfire. When you maneuver you may spend 1 Hellfire. If you do, set Ghost Rider's move value to 4, and he mave move through opposing fighters. Then deal 1 damage to each opposing fighter he moved through.",
+      "es": "Ghost Rider empieza el juego con 5 Hellfire. Cuando haces maneuver puedes gastar 1 Hellfire. Si lo haces, el valor de movimiento de Ghost Rider es 4, y puede moverse a través de luchadores contrarios. Luego hazle 1 daño a cada luchador contrario que haya atravesado."
+    },
+    "cards": [
+      {
+        "name": "Blaze of Glory",
+        "type": "attack",
+        "amount": 2,
+        "value": 2,
+        "boost": 3,
+        "character": "any",
+        "description": "After combat: Spend any amount of Hellfire, Deal that much damage to each fighter in Ghost Rider's zone (including Ghost Rider).",
+        "descripcion": "Después del combate: Gasta cualquier cantidad de Hellfire. Hazle ese daño a cada luchador en la zona de Ghost Rider (incluyendo a Ghost Rider)."
+      },
+      {
+        "name": "Chains of Hellfire",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 2,
+        "character": "any",
+        "description": "Set your Hellfire to 5.",
+        "descripcion": "Pon tu Hellfire en 5."
+      },
+      {
+        "name": "Control The Demon",
+        "type": "versatile",
+        "amount": 3,
+        "value": 0,
+        "boost": 1,
+        "character": "any",
+        "description": "During combat: This card's value is +1 for each Hellfire you have. (You do not spend Hellfire for this effect.)",
+        "descripcion": "Durante el combate: El valor de esta carta es +1 por cada Hellfire que tengas. (No gastas Hellfire para este efecto.)"
+      },
+      {
+        "name": "Deal With The Devil",
+        "type": "defense",
+        "amount": 2,
+        "value": 2,
+        "boost": 1,
+        "character": "any",
+        "description": "During combat: You may spend any amount of Hellfire. Increase the value of this card by that amount.",
+        "descripcion": "Durante el combate: Puedes gastar cualquier cantidad de Hellfire. Aumenta el valor de esta carta en esa cantidad."
+      },
+      {
+        "name": "Feint",
+        "type": "versatile",
+        "amount": 2,
+        "value": 2,
+        "boost": 1,
+        "character": "any",
+        "description": "Immediately: Cancel all effects on your opponent's card.",
+        "descripcion": "Inmediatamente: Cancela todos los efectos de la carta del oponente."
+      },
+      {
+        "name": "Hell Rides With Me",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 3,
+        "character": "any",
+        "description": "Move Ghost Rider and up to one adjacent fighter up to 4 spaces each. Gain 2 Hellfire. Gain 1 action.",
+        "descripcion": "Mueve a Ghost Rider y hasta un luchador adyacente hasta 4 espacios cada uno. Gana 2 Hellfire. Gana 1 acción."
+      },
+      {
+        "name": "I Brought The Devil With Me",
+        "type": "attack",
+        "amount": 3,
+        "value": 3,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: You may spend 2 Hellfire to gain 1 action.",
+        "descripcion": "Después del combate: Puedes gastar 2 Hellfire para ganar 1 acción."
+      },
+      {
+        "name": "I Finally Escaped Hell",
+        "type": "versatile",
+        "amount": 3,
+        "value": 3,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: You may spend 1 Hellfire to move Ghost Rider up to 2 spaces.",
+        "descripcion": "Después del combate: Puedes gastar 1 Hellfire para mover a Ghost Rider hasta 2 espacios."
+      },
+      {
+        "name": "Penance Stare",
+        "type": "versatile",
+        "amount": 2,
+        "value": 3,
+        "boost": 2,
+        "character": "any",
+        "description": "During combat: Add the BOOST value of the opposing fighter's card to this card's value. You may spend 2 Hellfire to do it a second time.",
+        "descripcion": "Durante el combate: Añade el valor de BOOST de la carta del luchador contrario a este valor. Puedes gastar 2 Hellfire para hacerlo una segunda vez."
+      },
+      {
+        "name": "Spirit Of Vengeance",
+        "type": "attack",
+        "amount": 3,
+        "value": 5,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: You may spend 1 Hellfire to draw 2 cards.",
+        "descripcion": "Después del combate: Puedes gastar 1 Hellfire para robar 2 cartas."
+      },
+      {
+        "name": "Stoke The Flames",
+        "type": "defense",
+        "amount": 3,
+        "value": 2,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: If you lost the combat, gain Hellfire equal to the combat damage you took.",
+        "descripcion": "Después del combate: Si perdiste el combate, gana Hellfire igual al daño de combate que recibiste."
+      },
+      {
+        "name": "The Wicked Will Burn",
+        "type": "versatile",
+        "amount": 3,
+        "value": 3,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: If Ghost Rider started this turn in a different space, gain 2 Hellfire.",
+        "descripcion": "Después del combate: Si Ghost Rider comenzó este turno en un espacio diferente, gana 2 Hellfire."
+      }
+    ]
   },
   {
     "name": "Moon Knight",
     "amount": 30,
-    "cards": []
+    "ability": {
+      "en": "Moon Knight\nAt the start of your turn, move up to 2 spaces.\n\nKhonshu\nKhonshu adds +2 to the value of his attack cards. He does not take damage from effects other than combat damage.\n\nMr. Knight\nMr. Knight adds +1 to all his defense values.\n\nAt the end of your turn, change to your next identity (In order, Moon Knight -> Khonshu -> Mr. Knight, repeating).\n\nStart the game as Moon Knight.",
+      "es": "Moon Knight\nAl comienzo de tu turno, muévete hasta 2 espacios.\n\nKhonshu\nKhonshu añade +2 al valor de sus cartas de ataque. No recibe daño de efectos que no sean de combate.\n\nMr. Knight\nMr. Knight añade +1 a todos sus valores de defensa.\n\nAl final de tu turno, cambia a tu siguiente identidad (En orden, Moon Knight -> Khonshu -> Mr. Knight, repitiendo).\n\nComienza el juego como Moon Knight."
+    },
+    "cards": [
+      {
+        "name": "A Totally Sane Thing To Do",
+        "type": "versatile",
+        "amount": 3,
+        "value": 2,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: You may deal 2 damage to both fighters in the combat.",
+        "descripcion": "Después del combate: Puedes hacerle 2 daño a ambos luchadores en el combate."
+      },
+      {
+        "name": "Feint",
+        "type": "versatile",
+        "amount": 3,
+        "value": 2,
+        "boost": 1,
+        "character": "any",
+        "description": "Immediately: Cancel all effects on your opponent's card.",
+        "descripcion": "Inmediatamente: Cancela todos los efectos de la carta de tu oponente."
+      },
+      {
+        "name": "Fist of Khonshu",
+        "type": "versatile",
+        "amount": 2,
+        "value": 3,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: If you won the combat, move the opposing fighter up to 4 spaces.",
+        "descripcion": "Después del combate: Si ganaste el combate, mueve el luchador contrario hasta 4 espacios."
+      },
+      {
+        "name": "Good Enough For Us",
+        "type": "versatile",
+        "amount": 2,
+        "value": 4,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: You may draw 2 cards. If you do, take 2 damage.",
+        "descripcion": "Después del combate: Puedes tomar 2 cartas. Si lo haces, toma 2 daño."
+      },
+      {
+        "name": "I'm Not Real",
+        "type": "attack",
+        "amount": 3,
+        "value": 4,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: You may change to your next identity.",
+        "descripcion": "Después del combate: Puedes cambiar a tu siguiente identidad."
+      },
+      {
+        "name": "Let Your Insanity Guide You",
+        "type": "versatile",
+        "amount": 2,
+        "value": 1,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: Discard the top card of your deck. Draw cards equal to that card's BOOST value.",
+        "descripcion": "Después del combate: Descarta la carta superior de tu mazo. Toma cartas igual al valor de BOOST de esa carta."
+      },
+      {
+        "name": "Madness Will Keep You Alive",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 3,
+        "character": "any",
+        "description": "Recover 2 health. If you started your turn in a different space, gain 1 action.",
+        "descripcion": "Recupera 2 salud. Si comenzaste tu turno en un espacio diferente, gana 1 acción."
+      },
+      {
+        "name": "Past and Present Intermingle",
+        "type": "versatile",
+        "amount": 3,
+        "value": 2,
+        "boost": 2,
+        "character": "any",
+        "description": "During combat: Add the BOOST value of the top card of your discard pile to this card's value.",
+        "descripcion": "Durante el combate: Añade el valor de BOOST de la carta superior de tu pila de descarte al valor de esta carta."
+      },
+      {
+        "name": "That's The Part I Like",
+        "type": "versatile",
+        "amount": 2,
+        "value": 3,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: If you won the combat, you may look at the top 3 cards of your opponent's deck and discard one of them. Place the other 2 back in any order.",
+        "descripcion": "Después del combate: Si ganaste el combate, puedes mirar las 3 primeras cartas del mazo de tu oponente y descartar una de ellas. Coloca las otras 2 en cualquier orden."
+      },
+      {
+        "name": "That's Why I Always Win",
+        "type": "attack",
+        "amount": 3,
+        "value": 3,
+        "boost": 2,
+        "character": "any",
+        "description": "During combat: You may BOOST this attack.",
+        "descripcion": "Durante el combate: Puedes hacerle BOOST a este ataque."
+      },
+      {
+        "name": "Travelers of The Night",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 3,
+        "character": "any",
+        "description": "Move your fighter up to 4 spaces. They may move through opposing fighters. Gain 1 action.",
+        "descripcion": "Mueve tu luchador hasta 4 espacios. Puede moverse a través de luchadores contrarios. Gana 1 acción."
+      },
+      {
+        "name": "We're All In This Together",
+        "type": "defense",
+        "amount": 3,
+        "value": 3,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: If you won the combat, draw 1 card.",
+        "descripcion": "Después del combate: Si ganaste el combate, toma 1 carta."
+      },
+    ]
   },
   {
     "name": "Dr. Ellie Sattler",
@@ -2194,14 +2689,278 @@ export const unmatched = [
   {
     "name": "Alice",
     "amount": 30,
+    "image": require('./assets/backs/alice.jpg'),
+    "ability": {
+      "en": "When you place Alice, choose whether she starts the game BIG or SMALL.\n\nWhen Alice is BIG, add 2 to the value of her attack cards.\n\nWhen Alice is SMALL, add 1 to the value of her defense cards.",
+      "es": "Cuando colocas a Alice, elige si comienza el juego GRANDE o PEQUEÑA.\n\nCuando Alice es GRANDE, añade 2 al valor de sus cartas de ataque.\n\nCuando Alice es PEQUEÑA, añade 1 al valor de sus cartas de defensa."
+    },
     "cards": [
-      
+      {
+        "name": "Claws That Catch",
+        "type": "attack",
+        "amount": 2,
+        "value": 3,
+        "boost": 2,
+        "character": "JABBERWOCK",
+        "description": "During combat: if the opposing fighter is a hero, this card's value is 5 instead.",
+        "descripcion": "Durante el combate: si el luchador contrario es un héroe, el valor de esta carta es 5 en su lugar."
+      },
+      {
+        "name": "Drink Me",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 2,
+        "character": "ALICE",
+        "description": "Draw 2 cards. Change size.",
+        "descripcion": "Toma 2 cartas. Cambia de tamaño."
+      },
+      {
+        "name": "Eat Me",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 3,
+        "character": "ALICE",
+        "description": "Move Alice up to 3 spaces. Change size.",
+        "descripcion": "Mueve a Alice hasta 3 espacios. Cambia de tamaño"
+      },
+      {
+        "name": "Feint",
+        "type": "versatile",
+        "amount": 3,
+        "value": 2,
+        "boost": 2,
+        "character": "any",
+        "description": "Immediately: Cancel all effects on your opponent's card.",
+        "descripcion": "Inmediatamente: Cancela todos los efectos de la carta de tu oponente."
+      },
+      {
+        "name": "I'm Late, I'm Late",
+        "type": "versatile",
+        "amount": 3,
+        "value": 2,
+        "boost": 3,
+        "character": "ALIVE",
+        "description": "After combat: Move Alice up to 5 spaces. Change size.",
+        "descripcion": "Después del combate: Mueve a Alice hasta 5 espacios. Cambia de tamaño."
+      },
+      {
+        "name": "Jaws That Bite",
+        "type": "attack",
+        "amount": 2,
+        "value": 4,
+        "boost": 2,
+        "character": "JABBERWOCK",
+        "description": "After combat: Deal 2 damage to any one fighter adjacent to the Jabberwock.",
+        "descripcion": "Después del combate: Haz 2 de daño a cualquier luchador adyacente al Jabberwock."
+      },
+      {
+        "name": "Looking Glass",
+        "type": "defense",
+        "amount": 2,
+        "value": 2,
+        "boost": 4,
+        "character": "ALICE",
+        "description": "After combat: Choose 2 different effects:\n\n- draw 2 cards\n\n- Alice recovers 3 health\n\n- place Alice in any other space",
+        "descripcion": "Después del combate: Elige 2 efectos diferentes:\n\n- toma 2 cartas\n\n- Alice se recupera 3 de salud\n\n- coloca a Alice en cualquier otro espacio"
+      },
+      {
+        "name": "Mad as a Hatter",
+        "type": "versatile",
+        "amount": 2,
+        "value": 3,
+        "boost": 1,
+        "character": "ALICE",
+        "description": "After combat: Move each of your fighters up to 2 spaces. Change size.",
+        "descripcion": "Después del combate: Mueve a cada uno de tus luchadores hasta 2 espacios. Cambia de tamaño."
+      },
+      {
+        "name": "Manxome Foe",
+        "type": "versatile",
+        "amount": 2,
+        "value": 3,
+        "boost": 2,
+        "character": "any",
+        "description": "During combat: Discard the top card of your deck. Add its BOOST value to this card's value.",
+        "descripcion": "Durante el combate: Descarta la carta superior de tu mazo. Añade su valor BOOST al valor de esta carta."
+      },
+      {
+        "name": "Momentous Shift",
+        "type": "versatile",
+        "amount": 2,
+        "value": 3,
+        "boost": 1,
+        "character": "any",
+        "description": "During combat: If your fighter started this turn in a different space, this card's value is 5 instead.",
+        "descripcion": "Durante el combate: Si tu luchador comenzó este turno en un espacio diferente, el valor de esta carta es 5 en su lugar."
+      },
+      {
+        "name": "O Frabjous Day!",
+        "type": "attack",
+        "amount": 1,
+        "value": 4,
+        "boost": 4,
+        "character": "ALICE",
+        "description": "After combat: Change size.",
+        "descripcion": "Después del combate: Cambia de tamaño."
+      },
+      {
+        "name": "Regroup",
+        "type": "versatile",
+        "amount": 3,
+        "value": 1,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: Draw 1 card. If you won the combat, draw 2 cards instead.",
+        "descripcion": "Después del combate: Toma 1 carta. Si ganaste el combate, toma 2 cartas en su lugar."
+      },
+      {
+        "name": "Skirmish",
+        "type": "versatile",
+        "amount": 2,
+        "value": 4,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: If you won the combat, choose one of the fighters in the combat and move them up to 2 spaces.",
+        "descripcion": "Después del combate: Si ganaste el combate, elige uno de los luchadores en el combate y muevelo hasta 2 espacios."
+      },
+      {
+        "name": "Snicker-Snack",
+        "type": "attack",
+        "amount": 1,
+        "value": 3,
+        "boost": 4,
+        "character": "ALICE",
+        "description": "After combat: If you won the combat, look at your opponent's hand and choose 1 card for them to discard.",
+        "descripcion": "Después del combate: Si ganaste el combate, mira la mano de tu oponente y elige 1 carta para que la descarte."
+      },
+      {
+        "name": "The Other Side of the Mushroom",
+        "type": "attack",
+        "amount": 1,
+        "value": 3,
+        "boost": 4,
+        "character": "ALICE",
+        "description": "After combat: Move Alice up to 3 spaces. Change size.",
+        "descripcion": "Después del combate: Mueve a Alice hasta 3 espacios. Cambia de tamaño."
+      }
     ]
   },
   {
     "name": "Medusa",
     "amount": 30,
+    "ability": {
+      "en": "At the start of your turn, you may deal 1 damage to an opposing fighter in Medusa's zone.",
+      "es": "Al inicio de tu turno, puedes infligir 1 de daño a un luchador contrario en la zona de Medusa."
+    },
     "cards": [
+      {
+        "name": "A Momentary Glance",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 4,
+        "character": "MEDUSA",
+        "description": "Deal 2 damage to any one fighter in Medusa's zone.",
+        "descripcion": "Inflige 2 de daño a cualquier luchador en la zona de Medusa."
+      },
+      {
+        "name": "Clutching Claws",
+        "type": "versatile",
+        "amount": 3,
+        "value": 3,
+        "boost": 2,
+        "character": "HARPY",
+        "description": "After combat: Your opponent discards 1 card.",
+        "descripcion": "Después del combate: Tu oponente descarta 1 carta."
+      },
+      {
+        "name": "Dash",
+        "type": "versatile",
+        "amount": 3,
+        "value": 3,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: Move your fighter up to 3 spaces.",
+        "descripcion": "Después del combate: Mueve tu luchador hasta 3 espacios."
+      },
+      {
+        "name": "Feint",
+        "type": "versatile",
+        "amount": 3,
+        "value": 2,
+        "boost": 2,
+        "character": "any",
+        "description": "Immediately: Cancel all effects on your opponent's card.",
+        "descripcion": "Inmediatamente: Cancela todos los efectos de la carta de tu oponente."
+      },
+      {
+        "name": "Gaze of Stone",
+        "type": "attack",
+        "amount": 3,
+        "value": 2,
+        "boost": 4,
+        "character": "MEDUSA",
+        "description": "After combat: If you won the combat, deal 8 damage to the opposing fighter.",
+        "descripcion": "Después del combate: Si ganaste el combate, inflige 8 de daño al luchador contrario."
+      },
+      {
+        "name": "Hiss and Slither",
+        "type": "defense",
+        "amount": 3,
+        "value": 4,
+        "boost": 3,
+        "character": "MEDUSA",
+        "description": "After combat: Your opponent discards 1 card.",
+        "descripcion": "Después del combate: Tu oponente descarta 1 carta."
+      },
+      {
+        "name": "Regroup",
+        "type": "versatile",
+        "amount": 3,
+        "value": 1,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: Draw 1 card. If you won the combat, draw 2 cards instead.",
+        "descripcion": "Después del combate: Toma 1 carta. Si ganaste el combate, toma 2 cartas en su lugar."
+      },
+      {
+        "name": "Second Shot",
+        "type": "attack",
+        "amount": 3,
+        "value": 3,
+        "boost": 3,
+        "character": "MEDUSA",
+        "description": "During combat: You may BOOST this attack.",
+        "descripcion": "Durante el combate: Puedes BOOST este ataque."
+      },
+      {
+        "name": "Snipe",
+        "type": "versatile",
+        "amount": 3,
+        "value": 3,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: Draw 1 card.",
+        "descripcion": "Después del combate: Toma 1 carta."
+      },
+      {
+        "name": "The Hounds of Mighty Zeus",
+        "type": "versatile",
+        "amount": 2,
+        "value": 4,
+        "boost": 3,
+        "character": "HARPY",
+        "description": "After combat: Move each Harpy up to 3 spaces.",
+        "descripcion": "Después del combate: Mueve cada Harpy hasta 3 espacios."
+      },
+      {
+        "name": "Winged Frenzy",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 2,
+        "character": "MEDUSA",
+        "description": "Move each of your fighters up to 3 spaces. You may move them through spaces containing opposing fighters.\n\nThen, return a defeated Harpy (if any) to any space in Medusa's zone.",
+        "descripcion": "Mueve cada uno de tus luchadores hasta 3 espacios. Puedes moverlos a través de espacios que contengan luchadores contrarios.\n\nLuego, devuelve un Harpy derrotado (si hay alguno) a cualquier espacio en la zona de Medusa."
+      },
     ]
   },
   {
@@ -3300,15 +4059,238 @@ export const unmatched = [
   {
     "name": "Elektra",
     "amount": 20,
+    "ability": {
+      "en": "The first time Elektra would be defeated, remove her and all Hand from the board. She is not defeated. At the start of your next turn, Resurrect her. (Ignore effects with the RESURRECTED symbol.)\n\nWhen Elektra Resurrects: Flip your health dial. Shuffle your discard pile into your deck.\n\nPlace Elektra and all Hand back onto the board with each fighter in a different zone. (You must resolve effects with the RESURRECTED symbol.)\n\nWhen resurrecting, only your discard pile is shuffled into your deck, not your hand of cards. When placing your fighters after you resurrect, you may place them in zones containing opposing fighters, you just cannot place two of your own fighters in the same zone as each other.",
+      "es": "La primera vez que Elektra sería derrotada, retírala y a todos los Hand del tablero. Ella no es derrotada. Al comienzo de tu próximo turno, resucítala. (Ignora los efectos con el símbolo RESURRECTED.)\n\nCuando Elektra resucita: Voltea tu marcador de salud. Baraja tu descarte en tu mazo.\n\nColoca a Elektra y a todos los Hand de vuelta en el tablero con cada luchador en una zona diferente. (Debes resolver los efectos con el símbolo RESURRECTED.)\n\nCuando resucitas, solo tu descarte se baraja en tu mazo, no tu mano de cartas. Cuando colocas a tus luchadores después de resucitar, puedes colocarlos en zonas que contengan luchadores oponentes, solo que no puedes colocar dos de tus propios luchadores en la misma zona."
+    },
     "cards": [
-      
+      {
+        "name": "Cloaked In Shadow",
+        "type": "versatile",
+        "amount": 2,
+        "value": 2,
+        "boost": 1,
+        "character": "ELEKTRA",
+        "description": "Immediately: Cancel all effects on your opponent's card.\n\nAfter combat: RESURRECTED: Move Elektra up to 3 spaces.",
+        "descripcion": "Inmediatamente: Cancela todos los efectos de la carta del oponente.\n\nDespués del combate: RESURRECTED: Mueve a Elektra hasta 3 espacios."
+      },
+      {
+        "name": "Hands of Red",
+        "type": "attack",
+        "amount": 2,
+        "value": 4,
+        "boost": 2,
+        "character": "ELEKTRA",
+        "description": "After combat: Return a defeated Hand to a space in Elektra's zone.",
+        "descripcion": "Después del combate: Devuelve un Hand derrotado a un espacio en la zona de Elektra."
+      },
+      {
+        "name": "Intercept",
+        "type": "defense",
+        "amount": 2,
+        "value": 3,
+        "boost": 4,
+        "character": "ELEKTRA",
+        "description": "During combat: RESURRECTED: You may reveal a card named SAI from your hand. If you do, the value of this card is 5 instead.",
+        "descripcion": "Durante el combate: RESURRECTED: Puedes revelar una carta llamada SAI de tu mano. Si lo haces, el valor de esta carta es 5 en vez de 3."
+      },
+      {
+        "name": "Mesmerize",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 2,
+        "character": "ELEKTRA",
+        "description": "Choose an opponent and look at their hand. Gain 1 action.RESURRECTED: Choose 1 card for them to discard.",
+        "descripcion": "Elige un oponente y mira su mano. Gana 1 acción. RESURRECTED: Elige 1 carta para que la descarte."
+      },
+      {
+        "name": "Mystic Assassin",
+        "type": "attack",
+        "amount": 2,
+        "value": 6,
+        "boost":1,
+        "character": "ELEKTRA",
+        "description": "After combat: Elektra takes 3 damage. RESURRECTED: Elektra takes no damage instead.",
+        "descripcion": "Después del combate: Elektra recibe 3 de daño. RESURRECTED: Elektra no recibe daño."
+      },
+      {
+        "name": "Ninjitsu",
+        "type": "versatile",
+        "amount": 2,
+        "value": 3,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: Place your fighter in any space.",
+        "descripcion": "Después del combate: Coloca a tu luchador en cualquier espacio."
+      },
+      {
+        "name": "Sai",
+        "type": "versatile",
+        "amount": 2,
+        "value": 4,
+        "boost": 3,
+        "character": "ELEKTRA",
+        "description": "",
+        "descripcion": ""
+      },
+      {
+        "name": "Snakeroot Clan",
+        "type": "defense",
+        "amount": 2,
+        "value": 1,
+        "boost": 2,
+        "character": "ELEKTRA",
+        "description": "Immediately: Elektra may swap spaces with a Hand. If she does, that Hand is now the defender.",
+        "descripcion": "Inmediatamente: Elektra puede intercambiar espacios con un Hand. Si lo hace, ese Hand es ahora el defensor."
+      },
+      {
+        "name": "The Fist",
+        "type": "attack",
+        "amount": 2,
+        "value": 3,
+        "boost": 3,
+        "character": "THE HAND",
+        "description": "After combat: You may deal 1 damage to your attacking fighter. If you do, return this card to your hand and gain 1 action.",
+        "descripcion": "Después del combate: Puedes infligir 1 de daño a tu luchador atacante. Si lo haces, devuelve esta carta a tu mano y gana 1 acción."
+      },
+      {
+        "name": "Whirlwind",
+        "type": "versatile",
+        "amount": 2,
+        "value": 2,
+        "boost": 1,
+        "character": "ELEKTRA",
+        "description": "After combat: RESURRECTED: Deal 1 damage to each adjacent opposing fighter.",
+        "descripcion": "Después del combate: RESURRECTED: Inflige 1 de daño a cada luchador oponente adyacente."
+      }
     ]
   },
   {
     "name": "Beowulf",
     "amount": 30,
+    "image": require('./assets/backs/beowulf.jpg'),
+    "ability": {
+      "en": "Beowulf starts with 1 Rage.\n\nWhen Beowulf is dealt damage, he gains 1 Rage.\n\nBeowulf has a maximum of 3 rage.",
+      "es": "Beowulf empieza con 1 Rabia.\n\nCuando Beowulf recibe daño, gana 1 Rabia.\n\nBeowulf tiene un máximo de 3 Rabia."
+    },
     "cards": [
-      
+      {
+        "name": "Epic Poem",
+        "type": "attack",
+        "amount": 2,
+        "value": 2,
+        "boost": 2,
+        "character": "BEOWULF",
+        "description": "Immediately: Gain 1 Rage.\n\nDuring combat: This card's value is +1 for each Rage you have. (You do not spend Rage for this effect.)",
+        "descripcion": "Inmediatamente: Gana 1 Rabia.\n\nDurante el combate: El valor de esta carta es +1 por cada Rabia que tengas. (No gastas Rabia para este efecto.)"
+      },
+      {
+        "name": "Fatal Struggle",
+        "type": "attack",
+        "amount": 3,
+        "value": 4,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: If you won the combat, draw 2 cards. If you lost the combat, your opponent draws 2 cards.",
+        "descripcion": "Después del combate: Si ganaste el combate, roba 2 cartas. Si perdiste el combate, tu oponente roba 2 cartas."
+      },
+      {
+        "name": "Feint",
+        "type": "versatile",
+        "amount": 3,
+        "value": 2,
+        "boost": 1,
+        "character": "any",
+        "description": "Immediately: Cancel all effects on your opponent's card.",
+        "descripcion": "Inmediatamente: Cancela todos los efectos de la carta de tu oponente."
+      },
+      {
+        "name": "Golden Drinking Horn",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 3,
+        "character": "BEOWULF",
+        "description": "Spend any amount of Rage. Choose a different effect for each Rage spent:\n\n- draw 2 cards\n\n- move Beowulf up to 4 spaces\n\n- Beowulf recovers 2 health.",
+        "descripcion": "Gasta cualquier cantidad de Rabia. Elige un efecto diferente por cada Rabia gastada:\n\n- roba 2 cartas\n\n- mueve a Beowulf hasta 4 espacios\n\n- Beowulf se recupera 2 de salud."
+      },
+      {
+        "name": "Hot for the Battle",
+        "type": "attack",
+        "amount": 2,
+        "value": 3,
+        "boost": 3,
+        "character": "WIGLAF",
+        "description": "After combat: Wiglaf may swap spaces with Beowulf.",
+        "descripcion": "Después del combate: Wiglaf puede intercambiar espacios con Beowulf."
+      },
+      {
+        "name": "No Contest Expecteth",
+        "type": "attack",
+        "amount": 2,
+        "value": 3,
+        "boost": 3,
+        "character": "BEOWULF",
+        "description": "After combat: If you attacked a sidekick and won the combat, you may spend 3 Rage to defeat that sidekick.",
+        "descripcion": "Después del combate: Si atacaste a un secuaz y ganaste el combate, puedes gastar 3 Rabia para derrotar a ese secuaz."
+      },
+      {
+        "name": "Remnant of Valor",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 2,
+        "character": "WIGLAF",
+        "description": "Wiglaf deals 1 damage to each adjacent fighter. If Beowulf was dealt damage this way, gain 1 action.",
+        "descripcion": "Wiglaf hace 1 de daño a cada luchador adyacente. Si Beowulf recibió daño de esta manera, gana 1 acción."
+      },
+      {
+        "name": "Skirmish",
+        "type": "versatile",
+        "amount": 3,
+        "value": 4,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: If you won the combat, choose one of the fighters in the combat and move them up to 2 spaces.",
+        "descripcion": "Después del combate: Si ganaste el combate, elige a uno de los luchadores en el combate y muevelo hasta 2 espacios."
+      },
+      {
+        "name": "The Ancient Heirloom",
+        "type": "attack",
+        "amount": 2,
+        "value": 3,
+        "boost": 1,
+        "character": "BEOWULF",
+        "description": "This card's effects cannot be canceled.\n\nDuring combat: You may spend 2 Rage to make this card's value 5 instead. You may spend 1 Rage to BOOST this card. (You may do both.)",
+        "descripcion": "Los efectos de esta carta no pueden ser cancelados.\n\nDurante el combate: Puedes gastar 2 Rabia para hacer que el valor de esta carta sea 5 en vez de 3. Puedes gastar 1 Rabia para BOOST esta carta. (Puedes hacer ambas cosas.)"
+      },
+      {
+        "name": "The Equal of Grendel",
+        "type": "defense",
+        "amount": 3,
+        "value": 3,
+        "boost": 1,
+        "character": "BEOWULF",
+        "description": "Immediately: You may spend 2 Rage to deal damage to the opposing fighter equal to the printed value of their card.",
+        "descripcion": "Inmediatamente: Puedes gastar 2 Rabia para hacer daño al luchador opuesto igual al valor impreso de su carta."
+      },
+      {
+        "name": "The War-King",
+        "type": "versatile",
+        "amount": 3,
+        "value": 1,
+        "boost": 3,
+        "character": "BEOWULF",
+        "description": "During combat: Spend any amount of Rage. This card's value is +2 for each Rage spent.",
+        "descripcion": "Durante el combate: Gasta cualquier cantidad de Rabia. El valor de esta carta es +2 por cada Rabia gastada."
+      },
+      {
+        "name": "Vigor and Courage",
+        "type": "scheme",
+        "amount": 3,
+        "boost": 2,
+        "character": "BEOWULF",
+        "description": "Choose an opponent. They discard 1 random card. Gain rage equal to its BOOST value.",
+        "descripcion": "Elige a un oponente. Ese oponente descarta 1 carta al azar. Gana Rabia igual al valor BOOST de esa carta."
+      }
     ]
   },
   {
@@ -3438,5 +4420,1580 @@ export const unmatched = [
         "descripcion": "(🌟 cuenta como cualquier uno de los siguientes símbolos 🐺🌹⚔️.)"
       }
     ]
-  }
+  },
+  {
+    "name": "Houdini",
+    "amount": 30,
+    "ability": {
+      "en": "When you take the maneuver action and BOOST, you may place Houdini in any space instead of moving. (Bess moves as normal.)",
+      "es": "Cuando tomas la acción de maniobra y haces BOOST, puedes colocar a Houdini en cualquier espacio en vez de moverte. (Bess se mueve normalmente.)"
+    },
+    "cards": [
+      {
+        "name": "A Magician Never Reveals His Secrets",
+        "type": "scheme",
+        "amount": 1,
+        "character": "HOUDINI",
+        "boost": 4,
+        "description": "Draw 2 cards. Gain 1 action.\n\nIf an effect would let an opponent look at your hand, you may reveal this card and cancel that effect.",
+        "descripcion": "Roba 2 cartas. Gana 1 acción.\n\nSi un efecto permitiría a un oponente mirar tu mano, puedes revelar esta carta y cancelar ese efecto."
+      },
+      {
+        "name": "All Part of the Show",
+        "type": "defense",
+        "value": 2,
+        "amount": 2,
+        "character": "any",
+        "boost": 2,
+        "description": "BOOSTED WITH: Houdini recovers 2 health.\n\nThis card's effect cannot be canceled.\n\nAfter combat: If your fighter was defeated, set their health to 4 instead and place them in any space. (This effect happens even if Houdini was defeated.)",
+        "descripcion": "EFECTO BOOST: Houdini recupera 2 de salud.\n\nLos efectos de esta carta no pueden ser cancelados.\n\nDespués del combate: Si tu luchador fue derrotado, establece su salud en 4 en vez de 0 y colócalo en cualquier espacio. (Este efecto ocurre incluso si Houdini fue derrotado.)"
+      },
+      {
+        "name": "An Illusion of My Own Design",
+        "type": "attack",
+        "value": 4,
+        "amount": 2,
+        "character": "HOUDINI",
+        "boost": 1,
+        "description": "Immediately: Your opponent may BOOST their card.\n\nDuring combat: You may BOOST this card.",
+        "descripcion": "Inmediatamente: Tu oponente puede BOOST su carta.\n\nDurante el combate: Puedes BOOST esta carta."
+      },
+      {
+        "name": "And the Beautiful Bess!",
+        "type": "versatile",
+        "value": 3,
+        "amount": 2,
+        "character": "BESS",
+        "boost": 1,
+        "description": "BOOSTED WITH: If it's your turn, gain 1 action.\n\nIf you discard this card as a result of an opponent's effect, draw 1 card.",
+        "descripcion": "EFECTO BOOST: Si es tu turno, gana 1 acción.\n\nSi descartas esta carta como resultado de un efecto del oponente, roba 1 carta."
+      },
+      {
+        "name": "Flourish",
+        "type": "attack",
+        "value": 3,
+        "amount": 4,
+        "character": "any",
+        "boost": 2,
+        "description": "BOOSTED WITH: Draw 1 card.\n\nDuring combat: You may BOOST this card.",
+        "descripcion": "EFECTO BOOST: Roba 1 carta.\n\nDurante el combate: Puedes BOOST esta carta."
+      },
+      {
+        "name": "For My Next Trick",
+        "type": "attack",
+        "value": 2,
+        "amount": 2,
+        "character": "any",
+        "boost": 2,
+        "description": "After combat: Move one of your fighters up to 1 space. Draw 1 card. Gain 1 action.",
+        "descripcion": "Después del combate: Mueve a uno de tus luchadores hasta 1 espacio. Roba 1 carta. Gana 1 acción."
+      },
+      {
+        "name": "Grand Escape",
+        "type": "defense",
+        "value": 2,
+        "amount": 3,
+        "character": "HOUDINI",
+        "boost": 3,
+        "description": "During combat: You may BOOST this card.\n\nAfter combat: If you won the combat, place your fighter in any space.",
+        "descripcion": "Durante el combate: Puedes BOOST esta carta.\n\nDespués del combate: Si ganaste el combate, coloca a tu luchador en cualquier espacio."
+      },
+      {
+        "name": "Misdirection",
+        "type": "versatile",
+        "value": 2,
+        "amount": 3,
+        "character": "any",
+        "boost": 1,
+        "description": "BOOSTED WITH: Deal 2 damage to any fighter.\n\nImmediately: Cancel all effects on your opponent's card.",
+        "descripcion": "EFECTO BOOST: Haz 2 de daño a cualquier luchador.\n\nInmediatamente: Cancela todos los efectos de la carta del oponente."
+      },
+      {
+        "name": "Set the Stage",
+        "type": "scheme",
+        "amount": 2,
+        "character": "BESS",
+        "boost": 2,
+        "description": "BOOSTED WITH: Look at an opponent's hand and choose a card for them to discard.\n\nDraw 3 cards. Then, put a card in your hand on top of your deck.",
+        "descripcion": "EFECTO BOOST: Mira la mano de un oponente y elige una carta para que la descarte.\n\nRoba 3 cartas. Luego, pon una carta de tu mano en la parte superior de tu mazo."
+      },
+      {
+        "name": "Sleight of Hand",
+        "type": "attack",
+        "value": 1,
+        "amount": 2,
+        "character": "any",
+        "boost": 3,
+        "description": "BOOSTED WITH: Draw 1 card.\n\nImmediately: You may return this card to your hand and choose a different card to play. Resolve all effects on that card as normal.",
+        "descripcion": "EFECTO BOOST: Roba 1 carta.\n\nInmediatamente: Puedes devolver esta carta a tu mano y elegir una carta diferente para jugar. Resuelve todos los efectos de esa carta como de costumbre."
+      },
+      {
+        "name": "Smoke and Mirrors",
+        "type": "versatile",
+        "value": 3,
+        "amount": 2,
+        "character": "any",
+        "boost": 1,
+        "description": "Immediately: Houdini and Bess may swap spaces. If they do, your other fighter is now in the combat.",
+        "descripcion": "Inmediatamente: Houdini y Bess pueden intercambiar espacios. Si lo hacen, tu otro luchador está ahora en el combate."
+      },
+      {
+        "name": "The Big Reveal",
+        "type": "attack",
+        "value": 2,
+        "amount": 2,
+        "character": "HOUDINI",
+        "boost": 3,
+        "description": "During combat: You may BOOST this card twice.\n\nAfter combat: Return one card you boosted with to your hand.",
+        "descripcion": "Durante el combate: Puedes BOOST esta carta dos veces.\n\nDespués del combate: Devuelve una carta con la que hayas BOOST a tu mano."
+      },
+      {
+        "name": "Vanishing Act",
+        "type": "versatile",
+        "value": 2,
+        "amount": 3,
+        "character": "HOUDINI",
+        "boost": 2,
+        "description": "After combat: Choose one of the fighters in the combat and move them up to 3 spaces. They may move through their opposing fighters.",
+        "descripcion": "Después del combate: Elige a uno de los luchadores en el combate y muévelo hasta 3 espacios. Pueden moverse a través de sus luchadores opuestos."
+      },
+    ]
+  },
+  {
+    "name": "The Genie",
+    "amount": 30,
+    "ability": {
+      "en": "At the start of your turn, you may discard 1 card to gain 1 action.",
+      "es": "Al comienzo de tu turno, puedes descartar 1 carta para ganar 1 acción."
+    },
+    "cards": [
+      {
+        "name": "Back In The Lamp",
+        "type": "defense",
+        "amount": 3,
+        "value": 0,
+        "boost": 1,
+        "character": "any",
+        "description": "Immediately: The Genie recovers 4 health.",
+        "descripcion": "Inmediatamente: El Genio recupera 4 de salud."
+      },
+      {
+        "name": "Careful What You Wish For",
+        "type": "attack",
+        "amount": 3,
+        "value": 4,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: If you lost the combat, deal 1 damage to an adjacent opposing fighter.",
+        "descripcion": "Después del combate: Si perdiste el combate, inflige 1 de daño a un luchador oponente adyacente."
+      },
+      {
+        "name": "Feint",
+        "type": "versatile",
+        "amount": 3,
+        "value": 2,
+        "boost": 1,
+        "character": "any",
+        "description": "Immediately: Cancel all effects on your opponent's card.",
+        "descripcion": "Inmediatamente: Cancela todos los efectos de la carta del oponente."
+      },
+      {
+        "name": "I Am Freed",
+        "type": "attack",
+        "amount": 2,
+        "value": 3,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: Place the Genie in any empty space. Then, deal 1 damage to each adjacent fighter.",
+        "descripcion": "Después del combate: Coloca al Genio en cualquier espacio vacío. Luego, inflige 1 de daño a cada luchador adyacente."
+      },
+      {
+        "name": "I Grant You Death",
+        "type": "versatile",
+        "amount": 3,
+        "value": 2,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: You may deal 1 damage to an adjacent fighter.",
+        "descripcion": "Después del combate: Puedes infligir 1 de daño a un luchador adyacente."
+      },
+      {
+        "name": "I've Made Sultans Out of Less",
+        "type": "versatile",
+        "amount": 2,
+        "value": 2,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: Look at your opponent's hand and choose a card for them to discard.",
+        "descripcion": "Después del combate: Mira la mano de tu oponente y elige una carta para que la descarte."
+      },
+      {
+        "name": "Imprisoned Wrath",
+        "type": "attack",
+        "amount": 2,
+        "value": 3,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: You may discard 2 cards to deal 2 damage to an adjacent opposing fighter.",
+        "descripcion": "Después del combate: Puedes descartar 2 cartas para infligir 2 de daño a un luchador oponente adyacente."
+      },
+      {
+        "name": "Prisoner's Torment",
+        "type": "defense",
+        "amount": 2,
+        "value": 1,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: Draw cards equal to the amount of combat damage you took.",
+        "descripcion": "Después del combate: Roba cartas igual a la cantidad de daño de combate que recibiste."
+      },
+      {
+        "name": "This is No Parlor Trick",
+        "type": "versatile",
+        "amount": 2,
+        "value": 1,
+        "boost": 2,
+        "character": "any",
+        "description": "During combat: The value of your opponent's card is equal to its BOOST value.",
+        "descripcion": "Durante el combate: El valor de la carta de tu oponente es igual a su valor BOOST."
+      },
+      {
+        "name": "Three Wishes",
+        "type": "scheme",
+        "amount": 3,
+        "boost": 3,
+        "character": "any",
+        "description": "Gain 1 action and choose one effect:\n\n- draw 5 cards\n\n- for the rest of your turn, your cards' values are 4 and cannot be changed\n\n- each opponent discards 2 cards",
+        "descripcion": "Gana 1 acción y elige un efecto:\n\n- roba 5 cartas\n\n- por el resto de tu turno, los valores de tus cartas son 4 y no pueden ser cambiados\n\n- cada oponente descarta 2 cartas"
+      },
+      {
+        "name": "Wishing For More Wishes",
+        "type": "versatile",
+        "amount": 3,
+        "value": 3,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: Your opponent draws 1 card. Draw 3 cards.",
+        "descripcion": "Después del combate: Tu oponente roba 1 carta. Roba 3 cartas."
+      },
+      {
+        "name": "Your Wish is My Command",
+        "type": "attack",
+        "amount": 2,
+        "value": 3,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: If you won the combat, you may discard 2 cards to gain 1 action.",
+        "descripcion": "Después del combate: Si ganaste el combate, puedes descartar 2 cartas para ganar 1 acción."
+      },
+    ]
+  },
+  {
+    "name": "Black Panther",
+    "amount": 30,
+    "ability": {
+      "en": "Whenever you BOOST, draw 1 card.\n\nCards stored in your VIBRANIUM SUIT can only be used to BOOST.",
+      "es": "Siempre que hagas BOOST, roba 1 carta.\n\nLas cartas almacenadas en tu TRAJE DE VIBRANIUM sólo se pueden usar para BOOST."
+    },
+    "cards": [
+      {
+        "name": "Analyze and Adjust",
+        "type": "attack",
+        "value": 3,
+        "amount": 3,
+        "character": "any",
+        "boost": 3,
+        "description": "After combat: Reveal the top card of your opponent's deck and store it in your Vibranium Suit.",
+        "descripcion": "Después del combate: Revela la primera carta del mazo de tu oponente y almacénala en tu Traje de Vibranium."
+      },
+      {
+        "name": "Ancestral Insight",
+        "type": "versatile",
+        "value": 4,
+        "amount": 3,
+        "character": "BLACK PANTHER",
+        "boost": 1,
+        "description": "After combat: If you won the combat, reveal the top card of your opponent's deck and store it in your Vibranium Suit.",
+        "descripcion": "Después del combate: Si ganaste el combate, revela la primera carta del mazo de tu oponente y almacénala en tu Traje de Vibranium."
+      },
+      {
+        "name": "Anti-Metal Claws",
+        "type": "versatile",
+        "value": 1,
+        "amount": 2,
+        "character": "BLACK PANTHER",
+        "boost": 2,
+        "description": "During combat: Add the BOOST value of the opposing fighter's card to this card's value. Then, You may BOOST this card.",
+        "descripcion": "Durante el combate: Añade el valor BOOST de la carta del luchador contrario al valor de esta carta. Luego, puedes BOOST esta carta."
+      },
+      {
+        "name": "Cat-Like Reflexes",
+        "type": "versatile",
+        "value": 3,
+        "amount": 2,
+        "character": "any",
+        "boost": 2,
+        "description": "After combat: If you won the combat, move one of the fighters in the combat up to 3 spaces.",
+        "descripcion": "Después del combate: Si ganaste el combate, mueve a uno de los luchadores en el combate hasta 3 espacios."
+      },
+      {
+        "name": "Evade",
+        "type": "defense",
+        "value": 3,
+        "amount": 2,
+        "character": "any",
+        "boost": 2,
+        "description": "After combat: Draw 1 card.",
+        "descripcion": "Después del combate: Roba 1 carta."
+      },
+      {
+        "name": "Feint",
+        "type": "versatile",
+        "value": 2,
+        "amount": 2,
+        "character": "any",
+        "boost": 1,
+        "description": "Immediately: Cancel all effects on your opponent's card.",
+        "descripcion": "Inmediatamente: Cancela todos los efectos de la carta del oponente."
+      },
+      {
+        "name": "Microweave Mesh",
+        "type": "defense",
+        "value": 2,
+        "amount": 2,
+        "character": "BLACK PANTHER",
+        "boost": 2,
+        "description": "During combat: You may BOOST this card.",
+        "descripcion": "Durante el combate: Puedes BOOST esta carta."
+      },
+      {
+        "name": "Nanotriage Processor",
+        "type": "versatile",
+        "value": 2,
+        "amount": 2,
+        "character": "SHURI",
+        "boost": 2,
+        "description": "After combat: Shuri recovers 1 health. If Black Panther is in the same zone as Shuri, he also recovers 1 health.",
+        "descripcion": "Después del combate: Shuri se recupera 1 de salud. Si Black Panther está en la misma zona que Shuri, él también se recupera 1 de salud."
+      },
+      {
+        "name": "Regroup",
+        "type": "versatile",
+        "value": 1,
+        "amount": 2,
+        "character": "any",
+        "boost": 2,
+        "description": "After combat: Draw 1 card. If you won the combat, draw 2 cards instead.",
+        "descripcion": "Después del combate: Roba 1 carta. Si ganaste el combate, roba 2 cartas en vez de ello."
+      },
+      {
+        "name": "Stalking Panther",
+        "type": "scheme",
+        "amount": 3,
+        "character": "any",
+        "boost": 2,
+        "description": "Move each of your fighters up to 3 spaces. They may move through opposing fighters. Gain 1 action.",
+        "descripcion": "Mueve a cada uno de tus luchadores hasta 3 espacios. Pueden moverse a través de luchadores oponentes. Gana 1 acción."
+      },
+      {
+        "name": "Tactical Remote Scanning",
+        "type": "scheme",
+        "amount": 2,
+        "character": "SHURI",
+        "boost": 3,
+        "description": "Choose an opponent. Reveal the top 2 cards of their deck and store them in your Vibranium Suit.",
+        "descripcion": "Elige a un oponente. Revela las 2 primeras cartas de su mazo y almacénalas en tu Traje de Vibranium."
+      },
+      {
+        "name": "Vibranium Shockwave",
+        "type": "attack",
+        "value": 2,
+        "amount": 2,
+        "character": "BLACK PANTHER",
+        "boost": 2,
+        "description": "During combat: You may BOOST this card.",
+        "descripcion": "Durante el combate: Puedes BOOST esta carta."
+      },
+      {
+        "name": "Wakanda Forever!",
+        "type": "versatile",
+        "value": 3,
+        "amount": 3,
+        "character": "BLACK PANTHER",
+        "boost": 3,
+        "description": "During combat: You may BOOST this card up to two times. (Draw a card for Black Panther's special ability each time you BOOST.)",
+        "descripcion": "Durante el combate: Puedes BOOST esta carta hasta dos veces. (Roba una carta por la habilidad especial de Black Panther cada vez que BOOST.)"
+      },
+    ]
+  },
+  {
+    "name": "Black Widow",
+    "amount": 31,
+    "ability": {
+      "en": "Before drawing your starting hand, add THE MOSCOW PROTOCOL card to your hand.\n\nThen, shuffle your deck and draw 5 cards. (Your starting hand if 6 cards instead of 5.)",
+      "es": "Antes de robar tu mano inicial, añade la carta THE MOSCOW PROTOCOL a tu mano.\n\nLuego, baraja tu mazo y roba 5 cartas. (Tu mano inicial es de 6 cartas en vez de 5.)"
+    },
+    "cards": [
+      {
+        "name": "Acting Director of S.H.I.E.L.D.",
+        "type": "versatile",
+        "amount": 3,
+        "value": 4,
+        "boost": 3,
+        "character": "MARIA HILL",
+        "description": "After combat: Move each of your fighters up to 3 spaces. They may move through opposing fighters.\n\nThen, shuffle 1 scheme from your discard pile into your deck.",
+        "descripcion": "Después del combate: Mueve a cada uno de tus luchadores hasta 3 espacios. Pueden moverse a través de luchadores oponentes.\n\nLuego, baraja 1 carta scheme de tu pila de descarte en tu mazo."
+      },
+      {
+        "name": "Caught in a Web",
+        "type": "versatile",
+        "amount": 3,
+        "value": 3,
+        "boost": 2,
+        "character": "BLACK WIDOW",
+        "description": "During combat: Cancel all AFTER COMBAT effects on your opponent's card.",
+        "descripcion": "Durante el combate: Cancela todos los efectos AFTER COMBAT de la carta del oponente."
+      },
+      {
+        "name": "Double Identity",
+        "type": "defense",
+        "amount": 3,
+        "value": 3,
+        "boost": 2,
+        "character": "any",
+        "description": "Immediately: Black Widow and Maria Hill may swap spaces. If they do, your other fighter is now the defender.",
+        "descripcion": "Inmediatamente: Black Widow y Maria Hill pueden intercambiar espacios. Si lo hacen, tu otro luchador es ahora el defensor."
+      },
+      {
+        "name": "Fake Out",
+        "type": "attack",
+        "amount": 2,
+        "value": 1,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: If you lost the combat, draw 1 card and gain 1 action.",
+        "descripcion": "Después del combate: Si perdiste el combate, roba 1 carta y gana 1 acción."
+      },
+      {
+        "name": "Feint",
+        "type": "versatile",
+        "amount": 3,
+        "value": 2,
+        "boost": 2,
+        "character": "any",
+        "description": "Immediately: Cancel all effects on your opponent's card.",
+        "descripcion": "Inmediatamente: Cancela todos los efectos de la carta del oponente."
+      },
+      {
+        "name": "Life Model Decoy",
+        "type": "defense",
+        "amount": 2,
+        "value": 0,
+        "boost": 0,
+        "character": "MARIA HILL",
+        "description": "After combat: If Maria Hill was defeated, place her adjacent to Black Widow. If you do, set Maria Hill's health to 3.",
+        "descripcion": "Después del combate: Si Maria Hill fue derrotada, colócala adyacente a Black Widow. Si lo haces, establece la salud de Maria Hill en 3."
+      },
+      {
+        "name": "The Budapest Gambit",
+        "type": "scheme",
+        "amount": 1,
+        "boost": 4,
+        "character": "BLACK WIDOW",
+        "description": "Mission: You have 2 or fewer other cards in your hand.\n\nDraw 5 cards. Each opponent discards 1 random card. Acquire a new mission.",
+        "descripcion": "Misión: Tienes 2 o menos cartas en tu mano.\n\nRoba 5 cartas. Cada oponente descarta 1 carta al azar. Adquiere una nueva misión."
+      },
+      {
+        "name": "The Firenze Agenda",
+        "type": "scheme",
+        "amount": 1,
+        "boost": 4,
+        "character": "BLACK WIDOW",
+        "description": "Mission: Black Widow is adjacent to an opposing hero.\n\nDeal 2 damage to each opposing fighter in Black Widow's zone. Acquire a new mission.",
+        "descripcion": "Misión: Black Widow está adyacente a un héroe oponente.\n\nHaz 2 de daño a cada luchador contrario en la zona de Black Widow. Adquiere una nueva misión."
+      },
+      {
+        "name": "The Kinshasa Directive",
+        "type": "scheme",
+        "amount": 1,
+        "boost": 4,
+        "character": "BLACK WIDOW",
+        "description": "Mission: Black Widow is in your starting space.\n\nChoose an opponent. They discard 2 cards. Acquire a new mission.",
+        "descripcion": "Misión: Black Widow está en tu espacio inicial.\n\nElige a un oponente. Ese oponente descarta 2 cartas. Adquiere una nueva misión."
+      },
+      {
+        "name": "The Madripoor Sanction",
+        "type": "scheme",
+        "amount": 1,
+        "boost": 4,
+        "character": "BLACK WIDOW",
+        "description": "Mission: Black Widow is in an opponent's starting space.\n\nDeal 2 damage to each of that opponent's fighters. Acquire a new mission.",
+        "descripcion": "Misión: Black Widow está en el espacio inicial de un oponente.\n\nHaz 2 de daño a cada uno de los luchadores de ese oponente. Adquiere una nueva misión."
+      },
+      {
+        "name": "The Moscow Protocol",
+        "type": "scheme",
+        "amount": 1,
+        "boost": 4,
+        "character": "BLACK WIDOW",
+        "description": "Mission: An opposing fighter took damage this turn.\n\nDraw 1 card and gain 1 action. Acquire a new mission.",
+        "descripcion": "Misión: Un luchador contrario recibió daño este turno.\n\nRoba 1 carta y gana 1 acción. Adquiere una nueva misión."
+      },
+      {
+        "name": "Widow's Bite",
+        "type": "attack",
+        "amount": 3,
+        "value": 4,
+        "boost": 1,
+        "character": "BLACK WIDOW",
+        "description": "After combat: If you won the combat, your opponent discards 1 card.",
+        "descripcion": "Después del combate: Si ganaste el combate, tu oponente descarta 1 carta."
+      },
+      {
+        "name": "Widow's Kiss",
+        "type": "versatile",
+        "amount": 2,
+        "value": 4,
+        "boost": 2,
+        "character": "BLACK WIDOW",
+        "description": "Immediately: The opposing fighter may not leave their space for the rest of the turn.",
+        "descripcion": "Inmediatamente: El luchador contrario no puede abandonar su espacio durante el resto del turno."
+      },
+      {
+        "name": "Widow's Line",
+        "type": "versatile",
+        "amount": 3,
+        "value": 3,
+        "boost": 2,
+        "character": "BLACK WIDOW",
+        "description": "After combat: Move the opposing fighter up to 2 spaces.",
+        "descripcion": "Después del combate: Mueve al luchador contrario hasta 2 espacios."
+      },
+      {
+        "name": "Widow's Sting",
+        "type": "attack",
+        "amount": 2,
+        "value": 5,
+        "boost": 2,
+        "character": "BLACK WIDOW",
+        "description": "After combat: Move Black Widow up to 3 spaces.",
+        "descripcion": "Después del combate: Mueve a Black Widow hasta 3 espacios."
+      },
+    ]
+  },
+  {
+    "name": "Winter Soldier",
+    "amount": 30,
+    "ability": {
+      "en": "Effects on Winter Soldier's cards cannot be canceled.",
+      "es": "Los efectos de las cartas de Winter Soldier no pueden ser cancelados."
+    },
+    "cards": [
+      {
+        "name": "A Boy Named Bucky",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 3,
+        "character": "any",
+        "description": "Ignore any {RED ROOM} effects on your cards for the rest of your turn. Gain 1 action.",
+        "descripcion": "Ignora cualquier efecto {RED ROOM} en tus cartas durante el resto de tu turno. Gana 1 acción."
+      },
+      {
+        "name": "Bionic Armn",
+        "type": "attack",
+        "amount": 3,
+        "value": 2,
+        "boost": 1,
+        "character": "any",
+        "description": "During combat: If Winter Soldier is adjacent to the opposing fighter, the value of this card is 6 instead.\n\nAfter combat: {RED ROOM} Your opponent moves each of their fighters up to 5 spaces.",
+        "descripcion": "Durante el combate: Si Winter Soldier está adyacente al luchador contrario, el valor de esta carta es 6 en vez de 2.\n\nDespués del combate: {RED ROOM} Tu oponente mueve a cada uno de sus luchadores hasta 5 espacios."
+      },
+      {
+        "name": "Born in the Barracks",
+        "type": "versatile",
+        "amount": 2,
+        "value": 3,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: If you won the combat, Winter Soldier recovers 2 health.",
+        "descripcion": "Después del combate: Si ganaste el combate, Winter Soldier recupera 2 de salud."
+      },
+      {
+        "name": "Complete the Mission",
+        "type": "defense",
+        "amount": 3,
+        "value": 3,
+        "boost": 2,
+        "character": "any",
+        "description": "During combat: You may BOOST this card.\n\nAfter combat: Deal damage to the opposing fighter equal to the amount of combat damage you took.",
+        "descripcion": "Durante el combate: Puedes BOOST esta carta.\n\nDespués del combate: Haz daño al luchador contrario igual a la cantidad de daño de combate que recibiste."
+      },
+      {
+        "name": "Feint",
+        "type": "versatile",
+        "amount": 3,
+        "value": 2,
+        "boost": 2,
+        "character": "any",
+        "description": "Immediately: Cancel all effects on your opponent's card.",
+        "descripcion": "Inmediatamente: Cancela todos los efectos de la carta del oponente."
+      },
+      {
+        "name": "Manipulation",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 3,
+        "character": "any",
+        "description": "Draw until you have 5 cards in your hand.\n\n{RED ROOM} Each opponent may draw until they have 5 cards in their hand.",
+        "descripcion": "Roba hasta que tengas 5 cartas en tu mano.\n\n{RED ROOM} Cada oponente puede robar hasta que tenga 5 cartas en su mano."
+      },
+      {
+        "name": "Marksman",
+        "type": "attack",
+        "amount": 3,
+        "value": 1,
+        "boost": 1,
+        "character": "any",
+        "description": "During combat: Add +1 to this card's value for each space between you and the opposing fighter along the shortest path.",
+        "descripcion": "Durante el combate: Añade +1 al valor de esta carta por cada espacio entre tú y el luchador contrario a lo largo del camino más corto."
+      },
+      {
+        "name": "Programmed to Kill",
+        "type": "attack",
+        "amount": 2,
+        "value": 4,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: {RED ROOM} If you won the combat, take 2 damage.",
+        "descripcion": "Después del combate: {RED ROOM} Si ganaste el combate, recibe 2 de daño."
+      },
+      {
+        "name": "Reflex Memories",
+        "type": "versatile",
+        "amount": 2,
+        "value": 5,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: {RED ROOM} Discard 2 random cards, then draw 2 cards",
+        "descripcion": "Después del combate: {RED ROOM} Descarta 2 cartas aleatorias, luego roba 2 cartas."
+      },
+      {
+        "name": "Reprogram",
+        "type": "versatile",
+        "amount": 3,
+        "value": 2,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: Choose 3 cards in your discard pile and shuffle them into your deck.",
+        "descripcion": "Después del combate: Elige 3 cartas en tu pila de descarte y barájalas en tu mazo."
+      },
+      {
+        "name": "Wily Fighting",
+        "type": "versatile",
+        "amount": 2,
+        "value": 3,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: Deal 1 damage to each opposing fighter adjacent to your fighter.",
+        "descripcion": "Después del combate: Haz 1 de daño a cada luchador contrario adyacente a tu luchador."
+      },
+      {
+        "name": "Without Remorse",
+        "type": "attack",
+        "amount": 3,
+        "value": 6,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: {RED ROOM} Your opponent may draw 1 card.",
+        "descripcion": "Después del combate: {RED ROOM} Tu oponente puede robar 1 carta."
+      },
+    ]
+  },
+  {
+    "name": "Spider-Man",
+    "amount": 30,
+    "ability": {
+      "en": "When an opponent attacks Spider-Man, before you play a defense card, they must tell you the printed value of their card.",
+      "es": "Cuando un oponente ataca a Spider-Man, antes de que juegues una carta de defensa, debe decirte el valor impreso de su carta."
+    },
+    "cards": [
+      {
+        "name": "Counter-Attack",
+        "type": "defense",
+        "amount": 3,
+        "value": 3,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: If the value of your opponent's card is 4 or higher, deal 2 damage to the opposing fighter.",
+        "descripcion": "Después del combate: Si el valor de la carta de tu oponente es 4 o mayor, inflige 2 de daño al luchador contrario."
+      },
+      {
+        "name": "Disarming Shot",
+        "type": "attack",
+        "amount": 2,
+        "value": 4,
+        "boost": 3,
+        "character": "any",
+        "description": "After combat: Draw a number of cards equal to the amount of damage dealt to the opposing fighter.",
+        "descripcion": "Después del combate: Roba una cantidad de cartas igual a la cantidad de daño infligido al luchador contrario."
+      },
+      {
+        "name": "Friendly Neighborhood Spider-Man",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 3,
+        "character": "any",
+        "description": "Recover 3 Health. Place Spider-Man in any space in his zone.",
+        "descripcion": "Recupera 3 de salud. Coloca a Spider-Man en cualquier espacio de su zona."
+      },
+      {
+        "name": "Momentous Shift",
+        "type": "versatile",
+        "amount": 3,
+        "value": 3,
+        "boost": 2,
+        "character": "any",
+        "description": "During combat: If your fighter started this turn in a different space, this card's value is 5 instead.",
+        "descripcion": "Durante el combate: Si tu luchador comenzó este turno en un espacio diferente, estea carta tiene un valor de 5 en vez de 3."
+      },
+      {
+        "name": "Right in the Face!",
+        "type": "versatile",
+        "amount": 2,
+        "value": 4,
+        "boost": 2,
+        "character": "any",
+        "description": "Immediately: Your opponent can't draw cards this turn.",
+        "descripcion": "Inmediatamente: Tu oponente no puede robar cartas este turno."
+      },
+      {
+        "name": "Snark",
+        "type": "versatile",
+        "amount": 2,
+        "value": 3,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: If your fighter is adjacent to the opposing fighter, draw 1 card.",
+        "descripcion": "Después del combate: Si tu luchador está adyacente al luchador contrario, roba 1 carta."
+      },
+      {
+        "name": "Spider-Sense Tingling!",
+        "type": "versatile",
+        "amount": 3,
+        "value": 2,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: If the value of your opponent's card is 4 or higher, draw 2 cards.",
+        "descripcion": "Después del combate: Si el valor de la carta de tu oponente es 4 o mayor, roba 2 cartas."
+      },
+      {
+        "name": "Swinging Kick",
+        "type": "attack",
+        "amount": 3,
+        "value": 6,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: You may move the opposing fighter a number of spaces up to the amount of combat damage dealt.",
+        "descripcion": "Después del combate: Puedes mover al luchador contrario una cantidad de espacios hasta la cantidad de daño de combate infligido."
+      },
+      {
+        "name": "Thwip!",
+        "type": "attack",
+        "amount": 3,
+        "value": 4,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: If you won the combat, place Spider-Man in any space in his zone.",
+        "descripcion": "Después del combate: Si ganaste el combate, coloca a Spider-Man en cualquier espacio de su zona."
+      },
+      {
+        "name": "Wall Crawler",
+        "type": "versatile",
+        "amount": 2,
+        "value": 3,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: Place Spider-Man in any space in his zone.",
+        "descripcion": "Después del combate: Coloca a Spider-Man en cualquier espacio de su zona."
+      },
+      {
+        "name": "Web Shooters",
+        "type": "defense",
+        "amount": 3,
+        "value": 3,
+        "boost": 2,
+        "character": "any",
+        "description": "During combat: Spider-Man cannot take more than 2 combat damage this combat.",
+        "descripcion": "Durante el combate: Spider-Man no puede recibir más de 2 daños de combate en este combate."
+      },
+      {
+        "name": "With Great Power",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 3,
+        "character": "any",
+        "description": "All of Spider-Man's attacks this turn are +1 value. Draw 1 card. Gain 1 action.",
+        "descripcion": "Todos los ataques de Spider-Man este turno tienen un valor +1. Roba 1 carta. Gana 1 acción."
+      },
+    ]
+  },
+  {
+    "name": "She-Hulk",
+    "amount": 30,
+    "ability": {
+      "en": "At the start of your turn, you may discard a card to deal damage equal to its BOOST value to a fighter in your zone.",
+      "es": "Al comienzo de tu turno, puedes descartar una carta para infligir daño igual a su valor BOOST a un luchador en tu zona."
+    },
+    "cards": [
+      {
+        "name": "Cease and Desist",
+        "type": "versatile",
+        "amount": 3,
+        "value": 1,
+        "boost": 2,
+        "character": "any",
+        "description": "Immediately: Cancel all effects on your opponent's card.\n\nDuring combat: If you are attacking, the value of this card is 4 instead.",
+        "descripcion": "Inmediatamente: Cancela todos los efectos de la carta del oponente.\n\nDurante el combate: Si estás atacando, el valor de esta carta es 4 en vez de 1."
+      },
+      {
+        "name": "Double Jeopardy",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 2,
+        "character": "any",
+        "description": "Draw 2 cards and recover 2 health.",
+        "descripcion": "Roba 2 cartas y recupera 2 de salud."
+      },
+      {
+        "name": "Green Energy",
+        "type": "versatile",
+        "amount": 3,
+        "value": 4,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: If you won the combat, deal 1 damage to each fighter adjacent to She-Hulk.",
+        "descripcion": "Después del combate: Si ganaste el combate, inflige 1 de daño a cada luchador adyacente a She-Hulk."
+      },
+      {
+        "name": "Jennifer Walters, Esq.",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 1,
+        "character": "any",
+        "description": "Place She-Hulk in a starting space. Draw 1 card. Gain 1 action.",
+        "descripcion": "Coloca a She-Hulk en un espacio inicial. Roba 1 carta. Gana 1 acción."
+      },
+      {
+        "name": "Lady Justice",
+        "type": "defense",
+        "amount": 3,
+        "value": 0,
+        "boost": 2,
+        "character": "any",
+        "description": "During combat: Discard the top card of your opponent's deck. Increase the value of this card by twice that card's boost value.",
+        "descripcion": "Durante el combate: Descarta la primera carta del mazo de tu oponente. Aumenta el valor de esta carta por el doble del valor BOOST de esa carta."
+      },
+      {
+        "name": "Leap Toward",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 1,
+        "character": "any",
+        "description": "Move She-Hulk up to 4 spaces. She may move through opposing fighters. Then, if she is adjacent to an opposing fighter, gain 1 action.",
+        "descripcion": "Mueve a She-Hulk hasta 4 espacios. Ella puede moverse a través de luchadores oponentes. Luego, si está adyacente a un luchador contrario, gana 1 acción."
+      },
+      {
+        "name": "Legalese",
+        "type": "versatile",
+        "amount": 3,
+        "value": 2,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: If you won the combat, your opponent chooses whether you both draw a card or both discard a card. If you lost the combat, you make the choice instead (see above).",
+        "descripcion": "Después del combate: Si ganaste el combate, tu oponente elige si ambos roban una carta o ambos descartan una carta. Si perdiste el combate, tú haces la elección en su lugar (ver arriba)."
+      },
+      {
+        "name": "Nerve Cluster Strike",
+        "type": "versatile",
+        "amount": 3,
+        "value": 3,
+        "boost": 1,
+        "character": "any",
+        "description": "Immediately: If She-Hulk is adjacent to the opposing fighter, the opposing fighter may not leave their space this turn.",
+        "descripcion": "Inmediatamente: Si She-Hulk está adyacente al luchador contrario, el luchador contrario no puede abandonar su espacio este turno."
+      },
+      {
+        "name": "Omega-Level Threat",
+        "type": "attack",
+        "amount": 2,
+        "value": 5,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: If you dealt 2 or more combat damage, your opponent discards 2 random cards.",
+        "descripcion": "Después del combate: Si infligiste 2 o más daños de combate, tu oponente descarta 2 cartas aleatorias."
+      },
+      {
+        "name": "Sensational",
+        "type": "attack",
+        "amount": 3,
+        "value": 4,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: If you won the combat, you may choose a card in your discard pile and shuffle it into your deck.",
+        "descripcion": "Después del combate: Si ganaste el combate, puedes elegir una carta en tu pila de descarte y barajarla en tu mazo."
+      },
+      {
+        "name": "The Defense Rests",
+        "type": "defense",
+        "amount": 2,
+        "value": 2,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: Draw cards equal to the amount of combat damage you took.",
+        "descripcion": "Después del combate: Roba cartas igual a la cantidad de daño de combate que recibiste."
+      },
+      {
+        "name": "The Savage She-Hulk",
+        "type": "attack",
+        "amount": 2,
+        "value": 3,
+        "boost": 3,
+        "character": "any",
+        "description": "During combat: You may spend an additional action to make this card's value 9 instead.",
+        "descripcion": "Durante el combate: Puedes gastar una acción adicional para que el valor de esta carta sea 9 en vez de 3."
+      },
+    ]
+  },
+  {
+    "name": "Doctor Strange",
+    "amount": 30,
+    "ability": {
+      "en": "After each combat, if Doctor Strange played a card, you may deal 1 damage to him. If you do, put that card on the bottom of your deck and draw 1 card.",
+      "es": "Después de cada combate, si Doctor Strange jugó una carta, puedes infligirse 1 de daño. Si lo haces, pon esa carta en la parte inferior de tu mazo y roba 1 carta."
+    },
+    "cards": [
+      {
+        "name": "Bolts of Balthakk",
+        "type": "attack",
+        "amount": 4,
+        "value": 2,
+        "boost": 3,
+        "character": "any",
+        "description": "During combat: You may BLIND BOOST this card.\n\nAfter combat: If you won the combat, gain 1 action.",
+        "descripcion": "Durante el combate: Puedes BLIND BOOST a esta carta.\n\nDespués del combate: Si ganaste el combate, gana 1 acción."
+      },
+      {
+        "name": "Cloak of Levitation",
+        "type": "versatile",
+        "amount": 2,
+        "value": 2,
+        "boost": 1,
+        "character": "DOCTOR STRANGE",
+        "description": "During combat: If Dr. Strange is adjacent to the opposing fighter, ignore the value of your opponent's card.",
+        "descripcion": "Durante el combate: Si Dr. Strange está adyacente al luchador contrario, ignora el valor de la carta de tu oponente."
+      },
+      {
+        "name": "Eye of Agamotto",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 2,
+        "character": "DOCTOR STRANGE",
+        "description": "Shuffle your hand into your deck. Draw 5 cards. Gain 1 action.",
+        "descripcion": "Baraja tu mano en tu mazo. Roba 5 cartas. Gana 1 acción."
+      },
+      {
+        "name": "Feint",
+        "type": "versatile",
+        "amount": 2,
+        "value": 2,
+        "boost": 1,
+        "character": "any",
+        "description": "Immediately: Cancel all effects on your opponent's card.",
+        "descripcion": "Inmediatamente: Cancela todos los efectos de la carta del oponente."
+      },
+      {
+        "name": "Master of Kamar-Taj",
+        "type": "versatile",
+        "amount": 3,
+        "value": 2,
+        "boost": 2,
+        "character": "any",
+        "description": "During combat: If Dr. Strange and Wong are adjacent, this card's value is 4 instead.",
+        "descripcion": "Durante el combate: Si Dr. Strange y Wong están adyacentes, el valor de esta carta es 4."
+      },
+      {
+        "name": "No Really, I'm a Doctor",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 3,
+        "character": "DOCTOR STRANGE",
+        "description": "Reveal a card from your hand and put it on top of your deck. Dr. Strange or a friendly fighter adjacent to him recovers health equal to that card's boost value.",
+        "descripcion": "Revela una carta de tu mano y ponla en la parte superior de tu mazo. Dr. Strange o un luchador aliado adyacente a él recupera salud igual al valor de BOOST de esa carta."
+      },
+      {
+        "name": "Seven Suns of Cinnibus",
+        "type": "versatile",
+        "amount": 3,
+        "value": 3,
+        "boost": 2,
+        "character": "DOCTOR STRANGE",
+        "description": "If the value of this card is above 7, ignore its value.\n\nDuring combat: You may BLIND BOOST this card up to two times.",
+        "descripcion": "Si el valor de esta carta es superior a 7, ignora su valor.\n\nDurante el combate: Puedes BLIND BOOST a esta carta hasta dos veces."
+      },
+      {
+        "name": "Steadfast Disciple",
+        "type": "versatile",
+        "amount": 3,
+        "value": 2,
+        "boost": 2,
+        "character": "WONG",
+        "description": "After combat: If Wong is adjacent to the opposing fighter, deal 1 damage to the opposing fighter and draw 1 card.",
+        "descripcion": "Después del combate: Si Wong está adyacente al luchador contrario, inflige 1 de daño al luchador contrario y roba 1 carta."
+      },
+      {
+        "name": "The Mists of Munnopor",
+        "type": "defense",
+        "amount": 3,
+        "value": 2,
+        "boost": 2,
+        "character": "DOCTOR STRANGE",
+        "description": "Immediately: Discard your opponent's card. They reveal cards from their deck until they reveal an attack or versatile card they can play. They play that card and randomly put the rest of the revealed cards on the bottom of their deck.",
+        "descripcion": "Inmediatamente: Descarta la carta de tu oponente. Revela cartas de su mazo hasta que revele una carta de ataque o versátil que pueda jugar. Juega esa carta y coloca al azar el resto de las cartas reveladas en la parte inferior de su mazo."
+      },
+      {
+        "name": "The Rings of Raggadorr",
+        "type": "attack",
+        "amount": 3,
+        "value": 4,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: If you won the combat, your fighter and each friendly fighter adjacent to them recover health equal to the damage dealt.",
+        "descripcion": "Después del combate: Si ganaste el combate, tu luchador y cada luchador aliado adyacente a él recupera salud igual al daño infligido."
+      },
+      {
+        "name": "The Winds of Watoomb",
+        "type": "attack",
+        "amount": 3,
+        "value": 4,
+        "boost": 1,
+        "character": "DOCTOR STRANGE",
+        "description": "After combat: Your opponent places Dr. Strange in a starting space. Place the opposing fighter in another starting space. All players shuffle their decks.",
+        "descripcion": "Después del combate: Tu oponente coloca a Dr. Strange en un espacio inicial. Coloca al luchador contrario en otro espacio inicial. Todos los jugadores barajan sus mazos."
+      },
+    ]
+  },
+  {
+    "name": "Nikola Tesla",
+    "amount": 30,
+    "ability": {
+      "en": "Start the game with 1 coil charged.\n\nAt the end of your turn, charge 1 coil.\n\nAt the start of your turn, if both coils are charged, deal 1 damage to each opposing fighter adjacent to Tesla and move them up to 1 space.",
+      "es": "Empieza el juego con 1 bobina cargada.\n\nAl final de tu turno, carga 1 bobina.\n\nAl comienzo de tu turno, si ambas bobinas están cargadas, inflige 1 de daño a cada luchador opuesto adyacente a Tesla y muévelos hasta 1 espacio."
+    },
+    "cards": [
+      {
+        "name": "7 Hertz",
+        "type": "attack",
+        "amount": 3,
+        "value": 4,
+        "boost": 3,
+        "character": "any",
+        "description": "After combat: You may discharge coils:\n\n- 1 Coil: Gain 1 action.\n\n- 2 Coils: Also, draw 1 card.",
+        "descripcion": "Después del combate: Puedes descargar bobinas:\n\n- 1 Bobina: Gana 1 acción.\n\n- 2 Bobinas: Además, roba 1 carta."
+      },
+      {
+        "name": "Death Ray",
+        "type": "attack",
+        "amount": 3,
+        "value": 3,
+        "boost": 4,
+        "character": "any",
+        "description": "During combat: You may discharge coils:\n\n- 1 Coil: This card's value is 5.\n\n- 2 Coils: Instead, this card's value is 7.",
+        "descripcion": "Durante el combate: Puedes descargar bobinas:\n\n- 1 Bobina: El valor de esta carta es 5.\n\n- 2 Bobinas: En vez de ello, el valor de esta carta es 7."
+      },
+      {
+        "name": "Fully Charged",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 1,
+        "character": "any",
+        "description": "Charge both coils. Gain 1 action.",
+        "descripcion": "Carga ambas bobinas. Gana 1 acción."
+      },
+      {
+        "name": "Intense Experimentation",
+        "type": "defense",
+        "amount": 3,
+        "value": 3,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: Draw 1 card. You may discharge coils:\n\n- 1 Coil: Instead, draw 2 cards.\n\n- 2 Coils: Instead, draw 3 cards and Tesla recovers 1 health.",
+        "descripcion": "Después del combate: Roba 1 carta. Puedes descargar bobinas:\n\n- 1 Bobina: En vez de ello, roba 2 cartas.\n\n- 2 Bobinas: En vez de ello, roba 3 cartas y Tesla recupera 1 de salud."
+      },
+      {
+        "name": "Kinetic Induction",
+        "type": "versatile",
+        "amount": 3,
+        "value": 2,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: Charge one coil. If you won the combat, charge both.",
+        "descripcion": "Después del combate: Carga una bobina. Si ganaste el combate, carga ambas."
+      },
+      {
+        "name": "Lightning Storm",
+        "type": "versatile",
+        "amount": 3,
+        "value": 3,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: You may discharge coils:\n\n- 1 Coil: Deal 1 damage to each opposing fighter in your zone.\n\n- 2 Coils: Instead, deal 2 damage.",
+        "descripcion": "Después del combate: Puedes descargar bobinas:\n\n- 1 Bobina: Inflige 1 de daño a cada luchador opuesto en tu zona.\n\n- 2 Bobinas: En vez de ello, inflige 2 de daño."
+      },
+      {
+        "name": "Polyphase Coils",
+        "type": "versatile",
+        "amount": 3,
+        "value": 3,
+        "boost": 1,
+        "character": "any",
+        "description": "Immediately: You may discharge coils:\n\n- 1 Coil: Cancel all effects on your opponent's card.\n\n- 2 Coils: Also, ignore that card's value.",
+        "descripcion": "Inmediatamente: Puedes descargar bobinas:\n\n- 1 Bobina: Cancela todos los efectos de la carta del oponente.\n\n- 2 Bobinas: Además, ignora el valor de esa carta."
+      },
+      {
+        "name": "Remote Control",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 3,
+        "character": "any",
+        "description": "Move all opposing fighters up to 2 spaces. Gain 1 action.",
+        "descripcion": "Mueve a todos los luchadores opuestos hasta 2 espacios. Gana 1 acción."
+      },
+      {
+        "name": "Repulsion Blast",
+        "type": "versatile",
+        "amount": 3,
+        "value": 2,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: Move the opposing fighter up to 2 spaces. You may discharge coils:\n\n- 1 Coil: Also, move Tesla up to 2 spaces.\n\n- 2 Coils: Also, your opponent discards 1 random card.",
+        "descripcion": "Después del combate: Mueve al luchador opuesto hasta 2 espacios. Puedes descargar bobinas:\n\n- 1 Bobina: Además, mueve a Tesla hasta 2 espacios.\n\n- 2 Bobinas: Además, tu oponente descarta 1 carta al azar."
+      },
+      {
+        "name": "The Alternating Current",
+        "type": "attack",
+        "amount": 2,
+        "value": 5,
+        "boost": 3,
+        "character": "any",
+        "description": "After combat: Choose one:\n\n- Charge both coils\n\n- Discharge both coils to have Tesla recover 2 health",
+        "descripcion": "Después del combate: Elige uno:\n\n- Carga ambas bobinas\n\n- Descarga ambas bobinas para que Tesla recupere 2 de salud"
+      },
+      {
+        "name": "X-Ray Radiation",
+        "type": "versatile",
+        "amount": 3,
+        "value": 4,
+        "boost": 1,
+        "character": "any",
+        "description": "During combat: Reveal the top card of your opponent's deck. You may discharge coils:\n\n- 1 Coil: Discard that card.\n\n- 2 Coils: Also, add its boost value to this card's value.",
+        "descripcion": "Durante el combate: Revela la carta superior del mazo de tu oponente. Puedes descargar bobinas:\n\n- 1 Bobina: Descarta esa carta.\n\n- 2 Bobinas: Además, añade su valor de boost al valor de esta carta."
+      },
+    ]
+  },
+  {
+    "name": "Dr. Jill Trent",
+    "amount": 30,
+    "ability": {
+      "en": "At the start of your turn, activate one of your gadgets. Whenever Jill Trent attacks, resolve the active gadget's effect.\n\nHypnoray Blaster\nDURING COMBAT: If your card's printed value is lower than your opponent's, reveal the top card of your opponent's deck. Increase the value of your attack by the BOOST value of the revealed card.\n\nUltrabiotic Tonic\nAFTER COMBAT: If your card's printed value is higher than your opponent's, Jill Trent Recovers 1 health.",
+      "es": "Al comienzo de tu turno, activa uno de tus gadgets. Siempre que Jill Trent ataque, resuelve el efecto del gadget activo.\n\nHypnoray Blaster\nDURANTE EL COMBATE: Si el valor impreso de tu carta es menor que el de tu oponente, revela la carta superior del mazo de tu oponente. Aumenta el valor de tu ataque por el valor BOOST de la carta revelada.\n\nUltrabiotic Tonic\nDESPUÉS DEL COMBATE: Si el valor impreso de tu carta es mayor que el de tu oponente, Jill Trent recupera 1 de salud."
+    },
+    "cards": [
+      {
+        "name": "Ace Fighte",
+        "type": "versatile",
+        "amount": 2,
+        "value": 5,
+        "boost": 3,
+        "character": "DAISY",
+        "description": "After combat: Draw 1 card.",
+        "descripcion": "Después del combate: Roba 1 carta."
+      },
+      {
+        "name": "Battle of Wits",
+        "type": "attack",
+        "amount": 3,
+        "value": 2,
+        "boost": 4,
+        "character": "JILL TRENT",
+        "description": "After combat: Reveal the top card of your deck and your opponent's deck. If your card has a higher BOOST value, deal 3 damage to the opposing fighter.",
+        "descripcion": "Después del combate: Revela la carta superior de tu mazo y el mazo de tu oponente. Si tu carta tiene un valor de BOOST más alto, inflige 3 de daño al luchador contrario."
+      },
+      {
+        "name": "Caught Red-Handed",
+        "type": "versatile",
+        "amount": 2,
+        "value": 1,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: Your opponent discards 1 card. If you won the combat, they discard 2 cards instead.",
+        "descripcion": "Después del combate: Tu oponente descarta 1 carta. Si ganaste el combate, descarta 2 cartas en vez de 1."
+      },
+      {
+        "name": "Energizing Spray",
+        "type": "attack",
+        "amount": 2,
+        "value": 5,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: Gain 1 action.",
+        "descripcion": "Después del combate: Gana 1 acción."
+      },
+      {
+        "name": "Gyroscopic Jetpack",
+        "type": "versatile",
+        "amount": 3,
+        "value": 4,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: Move your fighter up to 2 spaces. They may move through opposing fighters.",
+        "descripcion": "Después del combate: Mueve a tu luchador hasta 2 espacios. Puede moverse a través de luchadores opuestos."
+      },
+      {
+        "name": "Helpful Assistant",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 3,
+        "character": "DAISY",
+        "description": "Shuffle up to 3 Jill Trent cards in your discard pile back into your deck. Draw 1 card.",
+        "descripcion": "Baraja hasta 3 cartas de Jill Trent en tu pila de descarte en tu mazo. Roba 1 carta."
+      },
+      {
+        "name": "Hypnotist",
+        "type": "defense",
+        "amount": 2,
+        "value": 3,
+        "boost": 1,
+        "character": "JILL TRENT",
+        "description": "Immediately: If your active gadget is Hypnoray Blaster, cancel all effects on your opponent's card.",
+        "descripcion": "Inmediatamente: Si tu gadget activo es Hypnoray Blaster, cancela todos los efectos de la carta del oponente."
+      },
+      {
+        "name": "Indestructible Cloth",
+        "type": "defense",
+        "amount": 2,
+        "value": 5,
+        "boost": 2,
+        "character": "any",
+        "description": "Immediately: This combat, your fighter does not take damage from effects other than combat damage.",
+        "descripcion": "Inmediatamente: Este combate, tu luchador no recibe daño de efectos que no sean daño de combate."
+      },
+      {
+        "name": "Insightful Deduction",
+        "type": "versatile",
+        "amount": 2,
+        "value": 3,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: Reveal the top 3 cards of your opponent's deck. Put one of them on the bottom of the deck and the rest on top in any order.",
+        "descripcion": "Después del combate: Revela las 3 cartas superiores del mazo de tu oponente. Pon una de ellas en la parte inferior del mazo y el resto en la parte superior en cualquier orden."
+      },
+      {
+        "name": "Laser Pen",
+        "type": "versatile",
+        "amount": 3,
+        "value": 2,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: Deal 1 damage to the opposing fighter.",
+        "descripcion": "Después del combate: Inflige 1 de daño al luchador contrario."
+      },
+      {
+        "name": "Sisters in Arms",
+        "type": "versatile",
+        "amount": 2,
+        "value": 3,
+        "boost": 1,
+        "character": "DAISY",
+        "description": "This card's effects cannot be canceled. If Daisy and Jill Trent are adjacent and Daisy is attacking, Daisy gains the effect of Jill Trent's gadget.",
+        "descripcion": "Los efectos de esta carta no pueden ser cancelados. Si Daisy y Jill Trent están adyacentes y Daisy está atacando, Daisy obtiene el efecto del gadget de Jill Trent."
+      },
+      {
+        "name": "Stasis Diffuser",
+        "type": "versatile",
+        "amount": 2,
+        "value": 3,
+        "boost": 1,
+        "character": "any",
+        "description": "Immediately: The value of your opponent's card is equal to its printed value and cannot be changed.",
+        "descripcion": "Inmediatamente: El valor de la carta de tu oponente es igual a su valor impreso y no puede ser cambiado."
+      },
+
+      {
+        "name": "Utility Belt",
+        "type": "versatile",
+        "amount": 3,
+        "value": 3,
+        "boost": 3,
+        "character": "JILL TRENT",
+        "description": "After combat: Choose one:\n\n-Jill Trent recovers 1 health,\n\n-Move Jill Trent 1 space,\n\n-Draw 1 card",
+        "descripcion": "Después del combate: Elige uno:\n\n-Jill Trent recupera 1 de salud,\n\n-Mueve a Jill Trent 1 espacio,\n\n-Roba 1 carta"
+      },
+    ]
+  },
+  {
+    "name": "Golden Bat",
+    "amount": 30,
+    "ability": {
+      "en": "If you haven't taken a Maneuver action this turn, add +2 to the value of Golden Bat's attacks.",
+      "es": "Si no has tomado una acción de Maniobra este turno, añade +2 al valor de los ataques de Golden Bat."
+    },
+    "cards": [
+      {
+        "name": "A Punch to Shake the Earth",
+        "type": "attack",
+        "amount": 3,
+        "value": 1,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: Deal 1 damage to each opposing fighter in Golden Bat's zone. If you won the combat, deal 2 damage instead.",
+        "descripcion": "Después del combate: Inflige 1 de daño a cada luchador contrario en la zona de Golden Bat. Si ganaste el combate, inflige 2 de daño en vez de 1."
+      },
+      {
+        "name": "Alpine Fortress",
+        "type": "scheme",
+        "amount": 3,
+        "boost": 3,
+        "character": "any",
+        "description": "Choose a card in your discard pile and shuffle it into your deck. Draw 2 cards. Move Golden Bat up to 4 spaces.",
+        "descripcion": "Elige una carta en tu pila de descarte y barajala en tu mazo. Roba 2 cartas de tu mazo. Mueve a Golden Bat hasta 4 espacios."
+      },
+      {
+        "name": "Arrive Just in Time",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 2,
+        "character": "any",
+        "description": "Place Golden Bat in any space.",
+        "descripcion": "Coloca a Golden Bat en cualquier espacio."
+      },
+      {
+        "name": "He Laughs at Your Feebleness",
+        "type": "defense",
+        "amount": 2,
+        "value": 5,
+        "boost": 3,
+        "character": "any",
+        "description": "",
+        "descripcion": ""
+      },
+      {
+        "name": "Imposing Presence",
+        "type": "defense",
+        "amount": 2,
+        "value": 3,
+        "boost": 2,
+        "character": "any",
+        "description": "Immediately: Cancel all effects on your opponent's card.",
+        "descripcion": "Inmediatamente: Cancela todos los efectos de la carta del oponente."
+      },
+      {
+        "name": "Insight of the Ancients",
+        "type": "versatile",
+        "amount": 2,
+        "value": 3,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: If you won the combat, return a random card in your discard pile to your hand.",
+        "descripcion": "Después del combate: Si ganaste el combate, devuelve una carta aleatoria de tu pila de descarte a tu mano."
+      },
+      {
+        "name": "Like a Flash of Golden Light",
+        "type": "versatile",
+        "amount": 3,
+        "value": 2,
+        "boost": 2,
+        "character": "any",
+        "description": "During combat: If Golden Bat shares no zones with the space he started this turn in, this card's value is 4 instead.\n\nAfter combat: Move Golden Bat up to 5 spaces.",
+        "descripcion": "Durante el combate: Si Golden Bat no comparte zonas con el espacio en el que comenzó este turno, el valor de esta carta es 4 en vez de 2.\n\nDespués del combate: Mueve a Golden Bat hasta 5 espacios."
+      },
+      {
+        "name": "Sight Beyond Sight",
+        "type": "versatile",
+        "amount": 3,
+        "value": 2,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: Look at the top 3 cards of your opponent's deck. Put them back in any order.",
+        "descripcion": "Después del combate: Mira las 3 primeras cartas del mazo de tu oponente. Ponlas de nuevo en cualquier orden."
+      },
+      {
+        "name": "Skirmish",
+        "type": "versatile",
+        "amount": 2,
+        "value": 4,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: If you won the combat, choose one of the fighters in the combat and move them up to 2 spaces.",
+        "descripcion": "Después del combate: Si ganaste el combate, elige a uno de los luchadores en el combate y muevelo hasta 2 espacios."
+      },
+      {
+        "name": "Super Strength",
+        "type": "attack",
+        "amount": 2,
+        "value": 5,
+        "boost": 1,
+        "character": "any",
+        "description": "",
+        "descripcion": ""
+      },
+      {
+        "name": "Terrifying Roar",
+        "type": "versatile",
+        "amount": 3,
+        "value": 3,
+        "boost": 1,
+        "character": "any",
+        "description": "Immediately: Fighters cannot leave their spaces for the rest of the turn.",
+        "descripcion": "Inmediatamente: Los luchadores no pueden abandonar sus espacios por el resto del turno."
+      },
+      {
+        "name": "Vaporizing Eyebeams",
+        "type": "attack",
+        "amount": 3,
+        "value": 2,
+        "boost": 2,
+        "character": "any",
+        "description": "After combat: Your opponent discards 1 random card.",
+        "descripcion": "Después del combate: Tu oponente descarta 1 carta aleatoria."
+      },
+    ]
+  },
+  {
+    "name": "Annie Christmas",
+    "amount": 30,
+    "ability": {
+      "en": "Add +2 to the value of Annie's attacks if she has less health than the defender.",
+      "es": "Añade +2 al valor de los ataques de Annie si tiene menos salud que el defensor."
+    },
+    "cards": [
+      {
+        "name": "A Few More Pearls",
+        "type": "scheme",
+        "amount": 3,
+        "boost": 2,
+        "character": "ANNIE",
+        "description": "Deal 2 damage to each opposing fighter adjacent to Annie.",
+        "descripcion": "Inflige 2 de daño a cada luchador contrario adyacente a Annie."
+      },
+      {
+        "name": "Better Together",
+        "type": "versatile",
+        "amount": 4,
+        "value": 4,
+        "boost": 1,
+        "character": "any",
+        "description": "After combat: If your fighter is adjacent to a friendly fighter, your fighter and each friendly fighter adjacent to them recover 1 health.",
+        "descripcion": "Después del combate: Si tu luchador está adyacente a un luchador aliado, tu luchador y cada luchador aliado adyacente a ellos recuperan 1 de salud."
+      },
+      {
+        "name": "Bottom Dealing",
+        "type": "attack",
+        "amount": 2,
+        "value": 3,
+        "boost": 2,
+        "character": "CHARLIE",
+        "description": "During combat: Reveal the bottom card of your deck. Increase the value of this card by the BOOST value of the revealed card, then put the revealed card on the top or the bottom of your deck.",
+        "descripcion": "Durante el combate: Revela la carta inferior de tu mazo. Aumenta el valor de esta carta por el valor BOOST de la carta revelada, luego pon la carta revelada en la parte superior o inferior de tu mazo."
+      },
+      {
+        "name": "Captain's Orders",
+        "type": "scheme",
+        "amount": 2,
+        "boost": 2,
+        "character": "ANNIE",
+        "description": "Place Annie in any space in her zone. Then, place another friendly fighter in any space in Annie's zone. Gain 1 action.",
+        "descripcion": "Coloca a Annie en cualquier espacio de su zona. Luego, coloca a otro luchador aliado en cualquier espacio de la zona de Annie. Gana 1 acción."
+      },
+      {
+        "name": "Keep Your Hands to Yourself",
+        "type": "versatile",
+        "amount": 3,
+        "value": 3,
+        "boost": 2,
+        "character": "ANNIE",
+        "description": "After combat: Move each fighter in the combat up to 2 spaces.",
+        "descripcion": "Después del combate: Mueve a cada luchador en el combate hasta 2 espacios."
+      },
+      {
+        "name": "Lagniappe",
+        "type": "attack",
+        "amount": 3,
+        "value": 5,
+        "boost": 2,
+        "character": "ANNIE",
+        "description": "Immediately: Deal up to 2 damage to Annie to draw that many cards. (This may cause her special ability to apply.)",
+        "descripcion": "Inmediatamente: Inflige hasta 2 de daño a Annie para robar esa cantidad de cartas. (Esto puede hacer que se aplique su habilidad especial.)"
+      },
+      {
+        "name": "Long Shot",
+        "type": "versatile",
+        "amount": 2,
+        "value": 3,
+        "boost": 1,
+        "character": "any",
+        "description": "During combat: If the opposing fighter is not adjacent to your fighter, this card's value is 5 instead.",
+        "descripcion": "Durante el combate: Si el luchador contrario no está adyacente a tu luchador, el valor de esta carta es 5 en vez de 3."
+      },
+      {
+        "name": "Mississippi Queen",
+        "type": "defense",
+        "amount": 3,
+        "value": 2,
+        "boost": 3,
+        "character": "ANNIE",
+        "description": "Immediately: Damage cannot reduce Annie's health below 1 this turn.",
+        "descripcion": "Inmediatamente: El daño no puede reducir la salud de Annie por debajo de 1 este turno."
+      },
+      {
+        "name": "Quite a Pair",
+        "type": "versatile",
+        "amount": 2,
+        "value": 3,
+        "boost": 2,
+        "character": "any",
+        "description": "Immediately: You may reveal two cards from your hand with the same name. If you do, cancel all effects on your opponent's card.",
+        "descripcion": "Inmediatamente: Puedes revelar dos cartas de tu mano con el mismo nombre. Si lo haces, cancela todos los efectos de la carta del oponente."
+      },
+      {
+        "name": "Slick Talker",
+        "type": "defense",
+        "amount": 2,
+        "value": 3,
+        "boost": 3,
+        "character": "any",
+        "description": "Immediately: Annie and Charlie may swap spaces. If they do, your other fighter is now the defender.",
+        "descripcion": "Inmediatamente: Annie y Charlie pueden intercambiar espacios. Si lo hacen, tu otro luchador es ahora el defensor."
+      },
+      {
+        "name": "Striking Beauty",
+        "type": "versatile",
+        "amount": 2,
+        "value": 1,
+        "boost": 3,
+        "character": "ANNIE",
+        "description": "After combat: Deal 1 damage to the opposing fighter. If you won the combat, deal 2 damage instead.",
+        "descripcion": "Después del combate: Inflige 1 de daño al luchador contrario. Si ganaste el combate, inflige 2 de daño en vez de 1."
+      },
+      {
+        "name": "The Turn and the River",
+        "type": "versatile",
+        "amount": 2,
+        "value": 2,
+        "boost": 3,
+        "character": "CHARLIE",
+        "description": "After combat: Draw 2 cards.",
+        "descripcion": "Después del combate: Roba 2 cartas."
+      },
+    ]
+  },
 ]

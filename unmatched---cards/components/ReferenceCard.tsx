@@ -19,7 +19,7 @@ export default function ReferenceCard(props: Props) {
         Puedes descartar una carta para aplicar BOOST a tu movimiento.
       </ActionRow>
       <Line />
-      <ActionRow title="ESTRATEGIA">Juega una carta de estrategia.</ActionRow>
+      <ActionRow title="ESTRATEGIA">Juega una carta ⚡️.</ActionRow>
       <Line />
       <ActionRow title="ATACAR">
         Ataca jugando una carta de ataque o versatil boca abajo.
